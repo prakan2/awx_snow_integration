@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="vplex_adapter" label="VPLEX_Adapter" language="en" table="x_440435_vplex_vma_add_lun_to_existing_host_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>vplex_adapter</element>
+            <help/>
+            <hint/>
+            <label>VPLEX_Adapter</label>
+            <language>en</language>
+            <name>x_440435_vplex_vma_add_lun_to_existing_host_table</name>
+            <plural>VPLEX_Adapters</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-17 13:23:15</sys_created_on>
+            <sys_id>2613fcd31b1600103ecd4196bc4bcb84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>VPLEX_Adapter</sys_name>
+            <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+            <sys_update_name>sys_documentation_x_440435_vplex_vma_add_lun_to_existing_host_table_vplex_adapter_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-17 13:23:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

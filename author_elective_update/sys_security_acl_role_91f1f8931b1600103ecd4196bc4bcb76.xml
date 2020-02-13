@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 13:18:16</sys_created_on>
+        <sys_id>91f1f8931b1600103ecd4196bc4bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_440435_vplex_vma_add_lun_to_existing_host_table.x_440435_vplex_vma.add_lun_to_existing_host_table_user</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_security_acl display_value="x_440435_vplex_vma_add_lun_to_existing_host_table">11f1f8931b1600103ecd4196bc4bcb73</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_91f1f8931b1600103ecd4196bc4bcb76</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 13:18:16</sys_updated_on>
+        <sys_user_role display_value="x_440435_vplex_vma.add_lun_to_existing_host_table_user" name="x_440435_vplex_vma.add_lun_to_existing_host_table_user">c1f134931b1600103ecd4196bc4bcbb1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>sys_security_acl_role_91f1f8931b1600103ecd4196bc4bcb76</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 13:18:16</sys_created_on><sys_id>91f1f8931b1600103ecd4196bc4bcb76</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_440435_vplex_vma_add_lun_to_existing_host_table.x_440435_vplex_vma.add_lun_to_existing_host_table_user</sys_name><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_security_acl display_value="x_440435_vplex_vma_add_lun_to_existing_host_table">11f1f8931b1600103ecd4196bc4bcb73</sys_security_acl><sys_update_name>sys_security_acl_role_91f1f8931b1600103ecd4196bc4bcb76</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 13:18:16</sys_updated_on><sys_user_role display_value="x_440435_vplex_vma.add_lun_to_existing_host_table_user" name="x_440435_vplex_vma.add_lun_to_existing_host_table_user">c1f134931b1600103ecd4196bc4bcbb1</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>323649768</payload_hash>
+        <record_name>x_440435_vplex_vma_add_lun_to_existing_host_table.x_440435_vplex_vma.add_lun_to_existing_host_table_</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 13:18:16</sys_created_on>
+        <sys_id>59f1f8931b1600103ecd4196bc4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fb3a77e200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 13:18:16</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>91f1f8936a160010c6e500cc70346278</update_guid>
+        <update_guid_history>91f1f8936a160010c6e500cc70346278:323649768</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_440435_vplex_vma_add_lun_to_existing_host_table.x_440435_vplex_vma.add_lun_to_">2be15e7c1b6200103ecd4196bc4bcbf0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 12:08:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0d869fef885e470080db17e0bdb28504</sys_id>
+        <sys_metadata>91f1f8931b1600103ecd4196bc4bcb76</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_440435_vplex_vma_add_lun_to_existing_host_table.x_440435_vplex_vma.add_lun_to_existing_host_table_user</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent display_value="x_440435_vplex_vma_add_lun_to_existing_host_table">11f1f8931b1600103ecd4196bc4bcb73</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_91f1f8931b1600103ecd4196bc4bcb76</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_91f1f8931b1600103ecd4196bc4bcb76">59f1f8931b1600103ecd4196bc4bcb78</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 12:08:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

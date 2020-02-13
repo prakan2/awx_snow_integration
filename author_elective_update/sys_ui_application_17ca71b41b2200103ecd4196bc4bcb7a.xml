@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>VPLEX_VMAX_ENDPOINT</name>
+        <order/>
+        <roles>x_440435_vplex_vma.vplex_vmax_endpoint_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 10:27:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17ca71b41b2200103ecd4196bc4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VPLEX_VMAX_ENDPOINT</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>sys_ui_application_17ca71b41b2200103ecd4196bc4bcb7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 10:27:24</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>sys_ui_application_17ca71b41b2200103ecd4196bc4bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>VPLEX_VMAX_ENDPOINT</name><order/><roles>x_440435_vplex_vma.vplex_vmax_endpoint_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-22 10:27:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>17ca71b41b2200103ecd4196bc4bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>VPLEX_VMAX_ENDPOINT</sys_name><sys_overrides/><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>sys_ui_application_17ca71b41b2200103ecd4196bc4bcb7a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-22 10:27:24</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-1332044410</payload_hash>
+        <record_name>VPLEX_VMAX_ENDPOINT</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 10:27:24</sys_created_on>
+        <sys_id>9bca71b41b2200103ecd4196bc4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fcccadc630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 10:27:24</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>d3ca71b44a220010b0f801224c5fa87c</update_guid>
+        <update_guid_history>d3ca71b44a220010b0f801224c5fa87c:-1332044410</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-24 09:57:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>10269eef505d44719f5d0288e0567669</sys_id>
+        <sys_metadata>17ca71b41b2200103ecd4196bc4bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VPLEX_VMAX_ENDPOINT</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>sys_ui_application_17ca71b41b2200103ecd4196bc4bcb7a</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_17ca71b41b2200103ecd4196bc4bcb7a">9bca71b41b2200103ecd4196bc4bcb7c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-24 09:57:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

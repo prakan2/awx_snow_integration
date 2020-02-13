@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="host_ip" label="Host_IP" language="en" table="x_440435_vplex_vma_add_lun_to_existing_host_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>host_ip</element>
+            <help/>
+            <hint/>
+            <label>Host_IP</label>
+            <language>en</language>
+            <name>x_440435_vplex_vma_add_lun_to_existing_host_table</name>
+            <plural>Host_IPs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-17 13:31:26</sys_created_on>
+            <sys_id>12f4bc571b1600103ecd4196bc4bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Host_IP</sys_name>
+            <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+            <sys_update_name>sys_documentation_x_440435_vplex_vma_add_lun_to_existing_host_table_host_ip_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-17 13:31:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

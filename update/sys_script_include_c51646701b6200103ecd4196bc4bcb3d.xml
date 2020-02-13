@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_440435_vplex_vma.VPLEX_VMAX_Abstract_Workflow</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>VPLEX_VMAX_Abstract_Workflow</name>
+        <script><![CDATA[var VPLEX_VMAX_Abstract_Workflow = Class.create();
+VPLEX_VMAX_Abstract_Workflow.prototype = {
+	_staging_rec: null,
+	_blueprint_rec: null,	
+	_staging_ext: null,
+    initialize: function() {
+		this._staging_rec = staging_rec;
+		this._blueprint_rec = bp_rec;
+		if(!gs.nil(staging_rec) && !gs.nil(stagingext_table_name)){
+			var stag_ext = new GlideRecord(stagingext_table_name);
+			stag_ext.get(staging_rec.staging_ext);
+			this._staging_ext = stag_ext;
+		}
+    },
+	// Make sure this function is called at the end of REST request
+	isRequestEnded: function(requestStatus){
+		if(requestStatus == 'success' || requestStatus == 'failure'){
+			gs.info("marking requested ended...");
+			this._staging_rec.close_state = requestStatus;
+			this._staging_rec.update();
+		}
+	},
+	
+// 	_retQueryRequestStatus_vRA: function(requestStatus){
+// 		var ret = '';
+// 		if(requestStatus == "Successful" || requestStatus == "Completed" || requestStatus == "PROVIDER_COMPLETED" || requestStatus == "Partially Successful")
+// 			ret = 'success';
+// 		else if(requestStatus == "In Progress" || requestStatus == "Submitted"){ // || requestStatus == "Approved")
+// 			ret = 'in progress';
+// 		}
+// 		else if(requestStatus == "Approved"){
+// 			ret = 'start pending';   // if start pending, then retry 30 times x 2 minutes interval
+// 		}
+// 		else{
+// 			ret = 'failure';
+// 		}
+// 		this.isRequestEnded(ret);
+// 		return ret;
+// 	},		
+	
+// 	_updateStagingDuringRequest_vRA : function (catalogItemReqId, state, resp){
+// 		gs.info('_updateStagingDuringRequest: State = ' + state);
+// 		var stageRec = this._staging_rec;
+// 		if(state == "Request Sent"){
+// 			this._staging_ext.vra_request_number = catalogItemReqId;
+// 			this._staging_ext.update();
+// 			stageRec.state = state;
+// 		}
+// 		else if(state == "In Progress"){
+// 			var currState = stageRec.state.toString();
+// 			if(currState.indexOf("In Progress") != -1){
+// 				var num = currState.substring(currState.length - 2);
+// 				var num2 = parseInt(num) + 1;
+// 				stageRec.state = "In Progress - " + num2;
+// 			}
+// 			else
+// 				stageRec.state = "In Progress - 1";
+// 		}
+// 		else{
+// 			if(state == "Successful" || state == "Partially Successful"){
+// 				stageRec.op_status ="Operational";
+// 			}
+// 			else if(state == "Failed"){
+// 				stageRec.op_status ="Non-Operational";
+// 			}
+// 			if(resp != null && resp.requestNumber != null)
+// 				this._staging_ext.vra_request_seqnumber = resp.requestNumber;
+// 			if(resp != null && resp.requestCompletion != null && resp.requestCompletion.completionDetails != null)
+// 				this._staging_ext.vra_error_message = resp.requestCompletion.completionDetails;
+// 			stageRec.state = state;
+// 			this._staging_ext.update();
+// 		}
+// 		stageRec.update();    // WithReferences();
+// 	},	
+		
+// 	runOnDemandSnDiscoveryByIp: function(ipList){
+// 		for(var i in ipList){
+// 			gs.info("Discovering ip: " + ipList[i]);
+// 			sn_discovery.DiscoveryAPI.discoverIpAddress(ipList[i]);
+// 		}
+// 	},
+	
+// 	_pause: function(time){
+// 		var t1 = new GlideDateTime().getNumericValue();
+// 		var t2 = new GlideDateTime().getNumericValue();
+// 		var duration = t2 - t1;
+// 		while(duration < time){
+// 			t2 = new GlideDateTime().getNumericValue();
+// 			duration = t2 - t1;
+// 		}
+// 	},	
+	
+// 	prepareRequestApiCall: function(){
+// 	},
+	
+// 	runPreRequestScript: function(){
+// 	},
+
+// 	preRequestOps: function(){},
+	
+// 	submitRequest: function(){
+		
+// 	},
+	
+// 	queryRequestStatus: function(submit_resp){
+
+// 	},
+	
+// 	postRequestOps: function(submit_resp){},
+	
+// // 	runPostRequestScript: function(){
+// // 		// var util = CloudAccel_Ext_Custom.get();
+// // 		var util = x_emcrp_mcloud_ext.CloudExt_Ext_Custom.get();
+// // 		return util.callPostRequest_CustomScript(this._blueprint_rec, this._staging_rec,         this._staging_ext);		
+// // 	},		  
+
+    type: 'VPLEX_VMAX_Abstract_Workflow'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-22 11:35:38</sys_created_on>
+        <sys_id>c51646701b6200103ecd4196bc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VPLEX_VMAX_Abstract_Workflow</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>sys_script_include_c51646701b6200103ecd4196bc4bcb3d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-22 11:35:38</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["bcdc3fa01bf200103ecd4196bc4bcbea"],"activities":{},"subflows":[],"stages":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>This workflow adds new Lun to existing Host</description>
+        <expected_sequences>fcdc3fa01bf200103ecd4196bc4bcbe8,f8dc3fa01bf200103ecd4196bc4bcbe9,bcdc3fa01bf200103ecd4196bc4bcbea</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>fcdc3fa01bf200103ecd4196bc4bcbe8,f8dc3fa01bf200103ecd4196bc4bcbe9,bcdc3fa01bf200103ecd4196bc4bcbea</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Add Lun to existing hosts</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">fcdc3fa01bf200103ecd4196bc4bcbe8</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>78dc3ba01bf200103ecd4196bc4bcb3d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:34:08</sys_updated_on>
+        <table>x_440435_vplex_vma_add_lun_to_existing_host_table</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Add Lun to existing hosts">6284d8ee1b2600103ecd4196bc4bcb73</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>This workflow adds new Lun to existing Host</description>
+        <name>Add Lun to existing hosts</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-27 13:29:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6284d8ee1b2600103ecd4196bc4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Lun to existing hosts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>wf_workflow_6284d8ee1b2600103ecd4196bc4bcb73</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-27 13:29:58</sys_updated_on>
+        <table>x_440435_vplex_vma_add_lun_to_existing_host_table</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>fcdc3fa01bf200103ecd4196bc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Add Lun to existing hosts">78dc3ba01bf200103ecd4196bc4bcb3d</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=fcdc3fa01bf200103ecd4196bc4bcbe8"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">fcdc3fa01bf200103ecd4196bc4bcbe8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>34dc3fa01bf200103ecd4196bc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>bcdc3fa01bf200103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Add Lun to existing hosts">78dc3ba01bf200103ecd4196bc4bcb3d</workflow_version>
+        <x>1189</x>
+        <y>57</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bcdc3fa01bf200103ecd4196bc4bcbea"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Run Trial</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>f8dc3fa01bf200103ecd4196bc4bcbe9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:33:21</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add Lun to existing hosts">78dc3ba01bf200103ecd4196bc4bcb3d</workflow_version>
+        <x>228</x>
+        <y>51</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f8dc3fa01bf200103ecd4196bc4bcbe9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8dc3fa01bf200103ecd4196bc4bcbe9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>70dc3fa01bf200103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:33:21</sys_updated_on>
+        <value>gs.info("Entering the script snippet");&#13;
+activity.result = run();&#13;
+&#13;
+function run() {&#13;
+	var id = "9b7a846d1ba200103ecd4196bc4bcbcc";&#13;
+	var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
+	gs.info("done");&#13;
+// 	var url = 'vco/api/workflows/';&#13;
+// 	var rest = restApi.RESTCall(url, "get", null);&#13;
+// 	gs.debug(rest.responseBody);&#13;
+// 	gs.info("entered inside");&#13;
+var url = 'vco/api/workflows/2bb99896-ac2b-4f67-8066-84d00ef012ab/executions/';&#13;
+ var jsonTry =  new global.JSON();&#13;
+ var parameters = '{"parameters":[{"value":{"string":{"value":"6d262a2a-8fca-4b36-ab65-4dc972079131"}},"type":"string","name":"workflowId","scope":"local"},{"value":{"string":{"value":"shankar"}},"type":"string","name":"ClusterNameorUUID","scope":"local"}]}';&#13;
+ var payload = jsonTry.decode(parameters);&#13;
+var rest = restApi.RESTCall(url, "post", payload);&#13;
+gs.info(rest.getResponseBody);&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8dc3fa01bf200103ecd4196bc4bcbe9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>70dc3fa01bf200103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:33:21</sys_updated_on>
+        <value>gs.info("Entering the script snippet");&#13;
+activity.result = run();&#13;
+&#13;
+function run() {&#13;
+	var id = "9b7a846d1ba200103ecd4196bc4bcbcc";&#13;
+	var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
+	gs.info("done");&#13;
+// 	var url = 'vco/api/workflows/';&#13;
+// 	var rest = restApi.RESTCall(url, "get", null);&#13;
+// 	gs.debug(rest.responseBody);&#13;
+// 	gs.info("entered inside");&#13;
+var url = 'vco/api/workflows/2bb99896-ac2b-4f67-8066-84d00ef012ab/executions/';&#13;
+ var jsonTry =  new global.JSON();&#13;
+ var parameters = '{"parameters":[{"value":{"string":{"value":"6d262a2a-8fca-4b36-ab65-4dc972079131"}},"type":"string","name":"workflowId","scope":"local"},{"value":{"string":{"value":"shankar"}},"type":"string","name":"ClusterNameorUUID","scope":"local"}]}';&#13;
+ var payload = jsonTry.decode(parameters);&#13;
+var rest = restApi.RESTCall(url, "post", payload);&#13;
+gs.info(rest.getResponseBody);&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Run Trial">f8dc3fa01bf200103ecd4196bc4bcbe9</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>38dc3fa01bf200103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">34dc3fa01bf200103ecd4196bc4bcbe9</condition>
+        <from display_value="Begin">fcdc3fa01bf200103ecd4196bc4bcbe8</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>34dc3fa01bf200103ecd4196bc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+        <to display_value="Run Trial">f8dc3fa01bf200103ecd4196bc4bcbe9</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">38dc3fa01bf200103ecd4196bc4bcbea</condition>
+        <from display_value="Run Trial">f8dc3fa01bf200103ecd4196bc4bcbe9</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>f4dc3fa01bf200103ecd4196bc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+        <to display_value="End">bcdc3fa01bf200103ecd4196bc4bcbea</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 11:32:42</sys_created_on>
+        <sys_id>f8dc3ba01bf200103ecd4196bc4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 11:32:42</sys_updated_on>
+        <workflow_version display_value="Add Lun to existing hosts">78dc3ba01bf200103ecd4196bc4bcb3d</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=6284d8ee1b2600103ecd4196bc4bcb73^sys_id!=78dc3ba01bf200103ecd4196bc4bcb3d">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

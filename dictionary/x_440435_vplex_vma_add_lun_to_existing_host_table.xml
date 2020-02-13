@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Add Lun to Existing Host  Table" max_length="40" name="x_440435_vplex_vma_add_lun_to_existing_host_table" type="collection">
+        <element label="Host_IP" max_length="100" name="host_ip" type="string"/>
+        <element label="Mid Server" max_length="1024" name="mid_server" reference="ecc_agent" type="glide_list"/>
+        <element label="VMAX_Adapter" max_length="40" name="vmax_adapter" type="string"/>
+        <element label="Volume_Name" max_length="60" name="volume_name" type="string"/>
+        <element label="Volume_Size" max_length="40" name="volume_size" type="string"/>
+        <element label="VPLEX_Adapter" max_length="40" name="vplex_adapter" type="string"/>
+    </element>
+</database>
