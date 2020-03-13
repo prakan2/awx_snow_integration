@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_regex">
+    <question_regex action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>IP Validation</name>
+        <regex>^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$</regex>
+        <regex_flag/>
+        <sys_class_name>question_regex</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-13 13:56:16</sys_created_on>
+        <sys_id>548dfbf31b7600103ecd4196bc4bcbc1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IP Validation</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>question_regex_548dfbf31b7600103ecd4196bc4bcbc1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-13 13:56:48</sys_updated_on>
+        <validation_message>Input is not correct</validation_message>
+    </question_regex>
+    <sys_translated_text action="delete_multiple" query="documentkey=548dfbf31b7600103ecd4196bc4bcbc1"/>
+</record_update>

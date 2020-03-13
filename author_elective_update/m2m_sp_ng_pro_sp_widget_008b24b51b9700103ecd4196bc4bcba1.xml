@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="DELETE">
+        <sp_angular_provider display_value="scToggleData">c045f99a0b67320014ea425663673a25</sp_angular_provider>
+        <sp_widget display_value="copy of SC Catalog Item">8c8b60b11b9700103ecd4196bc4bcb72</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-02 14:01:56</sys_created_on>
+        <sys_id>008b24b51b9700103ecd4196bc4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scToggleData.copy of SC Catalog Item</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_008b24b51b9700103ecd4196bc4bcba1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-02 14:01:56</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>m2m_sp_ng_pro_sp_widget_008b24b51b9700103ecd4196bc4bcba1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="scToggleData">c045f99a0b67320014ea425663673a25</sp_angular_provider><sp_widget display_value="copy of SC Catalog Item">8c8b60b11b9700103ecd4196bc4bcb72</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-02 14:01:56</sys_created_on><sys_id>008b24b51b9700103ecd4196bc4bcba1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>scToggleData.copy of SC Catalog Item</sys_name><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_008b24b51b9700103ecd4196bc4bcba1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-02 14:01:56</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+        <payload_hash>1322161666</payload_hash>
+        <record_name>scToggleData.copy of SC Catalog Item</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-02 14:01:56</sys_created_on>
+        <sys_id>408b24b51b9700103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1709b8da5c80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-02 14:01:56</sys_updated_on>
+        <type>Angular Providers</type>
+        <update_guid>888b24b5c99700107cd0187fbe8226a2</update_guid>
+        <update_guid_history>888b24b5c99700107cd0187fbe8226a2:1322161666</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="scToggleData.copy of SC Catalog Item">fdbd24391b9700103ecd4196bc4bcb45</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-02 14:11:37</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_ng_pro_sp_widget">m2m_sp_ng_pro_sp_widget</sys_db_object>
+        <sys_id>1ec48bbd74b34ec49c38a7f200af2ca4</sys_id>
+        <sys_metadata>008b24b51b9700103ecd4196bc4bcba1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scToggleData.copy of SC Catalog Item</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_008b24b51b9700103ecd4196bc4bcba1</sys_update_name>
+        <sys_update_version display_value="m2m_sp_ng_pro_sp_widget_008b24b51b9700103ecd4196bc4bcba1">408b24b51b9700103ecd4196bc4bcba3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-02 14:11:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

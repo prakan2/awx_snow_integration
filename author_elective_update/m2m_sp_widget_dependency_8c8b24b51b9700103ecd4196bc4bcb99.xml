@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="dialog-polyfill">2eaf31f30b301200b0b02c6317673a84</sp_dependency>
+        <sp_widget display_value="copy of SC Catalog Item">8c8b60b11b9700103ecd4196bc4bcb72</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-02 14:01:56</sys_created_on>
+        <sys_id>8c8b24b51b9700103ecd4196bc4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dialog-polyfill.copy of SC Catalog Item</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_8c8b24b51b9700103ecd4196bc4bcb99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-02 14:01:56</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>m2m_sp_widget_dependency_8c8b24b51b9700103ecd4196bc4bcb99</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="dialog-polyfill">2eaf31f30b301200b0b02c6317673a84</sp_dependency><sp_widget display_value="copy of SC Catalog Item">8c8b60b11b9700103ecd4196bc4bcb72</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-02 14:01:56</sys_created_on><sys_id>8c8b24b51b9700103ecd4196bc4bcb99</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dialog-polyfill.copy of SC Catalog Item</sys_name><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>m2m_sp_widget_dependency_8c8b24b51b9700103ecd4196bc4bcb99</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-02 14:01:56</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>1698708908</payload_hash>
+        <record_name>dialog-polyfill.copy of SC Catalog Item</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-02 14:01:56</sys_created_on>
+        <sys_id>448b24b51b9700103ecd4196bc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1709b8da5790000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-02 14:01:56</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>8c8b24b50c9700105ce72ed66b58bc9b</update_guid>
+        <update_guid_history>8c8b24b50c9700105ce72ed66b58bc9b:1698708908</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="dialog-polyfill.copy of SC Catalog Item">4abd28391b9700103ecd4196bc4bcbd0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-02 14:11:37</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>00521e747b624c708002c6b03257c900</sys_id>
+        <sys_metadata>8c8b24b51b9700103ecd4196bc4bcb99</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dialog-polyfill.copy of SC Catalog Item</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_8c8b24b51b9700103ecd4196bc4bcb99</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_8c8b24b51b9700103ecd4196bc4bcb99">448b24b51b9700103ecd4196bc4bcb9c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-02 14:11:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

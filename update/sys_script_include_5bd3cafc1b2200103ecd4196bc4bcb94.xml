@@ -7,14 +7,32 @@
         <client_callable>false</client_callable>
         <description/>
         <name>VPLEX_VMAX_Abstract_RestApi</name>
-        <script><![CDATA[var VPLEX_VMAX_Abstract_RestApi = Class.create();
+        <script><![CDATA[var MAX_TRIES = 10;
+var SLEEP_TIME_MS = 5000;
+// gs.sleep() scoping workaround - it is MUCH better to use a globally scoped
+// sleep() wrapper around gs.sleep()
+function sleep(ms) {
+  var endSleep = new GlideDuration().getNumericValue() + ms;
+  while ( new GlideDuration().getNumericValue() < endSleep) {
+   //wait 
+  }
+
+  return;
+}
+
+
+
+var VPLEX_VMAX_Abstract_RestApi = Class.create();
 VPLEX_VMAX_Abstract_RestApi.prototype = {
 	
 	_controlRecord: null,	
 	_restErr: "",
+	_endpoint_sysid: null,
 	_authorizationToken: null,
 	_isAuthorized: false,
+	
     initialize: function(endpoint_sysid, doInit) {
+		  this.endpoint_sysid = endpoint_sysid;
 		  this._controlRecord = this._getEndpointSetting(endpoint_sysid);
 		   if(doInit == undefined || doInit === true){
 			   this._init();	
@@ -23,7 +41,10 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 	
 	_getEndpointSetting: function(endpoint_sysid){
 		var rec = new GlideRecord('x_440435_vplex_vma_vplex_vmax_endpoint_settings');
-		rec.get(endpoint_sysid);
+		//rec.get(endpoint_sysid);
+		gs.info(endpoint_sysid);
+		var returnValue = rec.get(endpoint_sysid);
+		gs.info(returnValue); // logs true or false
 		return rec;
 	},
 
@@ -89,6 +110,64 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 		}
 	},	
 	
+	executeWorkflow: function(workflow, data) {
+		
+		var url = 'vco/api/workflows/' + workflow + '/executions';
+		var response = this.RESTCall(url, 'post', data);
+		var location = response.reqLocation;
+	//	var location = response.getHeader("Location");
+		if (!location) {
+			throw 'Error: no location in response header of vro request';
+		}
+		
+		// wait for process to finish
+	//	response = this.restGet(location);
+		response = this.restGet(response.reqLocation);
+		//gs.info("check" + response.getBody());
+		var rBody = JSON.parse(response.getBody());
+		gs.info('first response body: ' + rBody);
+		var status = rBody.state;
+		gs.info('first status: ' + status);
+		
+		var counter = 0;
+		while(status == 'running' && counter++ < MAX_TRIES) {
+			sleep(SLEEP_TIME_MS);
+		//	response = this.restGet(location);
+			response = this.restGet(response.reqLocation);
+			rBody = JSON.parse(response.getBody());
+			gs.info('   response: ' + JSON.stringify(response));
+			gs.info('   response body: ' + rBody);
+			status = rBody.state;
+			gs.info('   status: ' + status);
+		}
+		gs.info('final status: ' + status);
+		if(status !== 'completed') {
+			var exception = rBody['content-exception'];
+			throw 'Error executing workflow, status: ' + status + ' tries: ' + counter + " exception: " + exception;
+		}
+		//return response;
+		// check for output params
+		response = this.restGet(location);
+		gs.info(response.getBody());
+		rBody = JSON.parse(response.getBody());
+		gs.info("check  " + rBody['output-parameters']);
+		var output = rBody['output-parameters'];
+		gs.info(JSON.stringify(output));
+		return output;
+	},
+	
+	
+	restGet: function(url) {
+		var r = this._setRestRequestIgnoreBaseUrl(url, 'get');
+		var response = r.execute();
+        response.waitForResponse(300);
+        if (response.haveError()) {
+            gs.info("restGet call has error: " + response.getErrorMessage());
+			throw "restGet call has error: " + response.getErrorMessage();
+        }
+		return response;
+	},
+	
 	_setRestRequest: function(extraURL, method){
 		var r = new sn_ws.RESTMessageV2();
 		r.setRequestHeader("Content-Type", "application/json");
@@ -98,8 +177,6 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 			r.setRequestHeader("Authorization", this.getToken());	
 		}
 		if(this._controlRecord.authorization_type.toString() == 'Basic Auth'){
-			// var password = this._controlRecord.credential.password.getDecryptedValue().toString();
-			// var username = this._controlRecord.credential.username.toString();
 			var password = this._controlRecord.password.toString();
 			var username = this._controlRecord.username.toString();
 			gs.info('Basic Auth, user name: ' + username);
@@ -125,11 +202,41 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 		return r;
 	},
 	
+	_setRestRequestIgnoreBaseUrl: function(url, method) {
+        var r = new sn_ws.RESTMessageV2();
+        r.setRequestHeader("Content-Type", "application/json");
+        r.setRequestHeader("Accept", "application/json");
+        gs.info("Authorized: " + this._isAuthorized);
+        if (this._isAuthorized) {
+            r.setRequestHeader("Authorization", this.getToken());
+        }
+        if (this._controlRecord.authorization_type.toString() == 'Basic Auth') {
+            var password = this._controlRecord.password.toString();
+            var username = this._controlRecord.username.toString();
+            gs.info("Basic Auth, user name: " + username);
+            r.setBasicAuth(username, password);
+        }
+
+        r.setHttpMethod(method);
+		
+		if(!(this._controlRecord.mid_server_list.nil())){
+			var mid = new GlideRecord('ecc_agent');
+			var sysids = this._controlRecord.mid_server_list.split(',');
+			mid.get(sysids[0]);
+			gs.info("mid server = " + mid.name.toString());
+			r.setMIDServer(mid.name.toString());
+		}
+
+        gs.info("CS: URL: " + url);
+        r.setEndpoint(url);
+        return r;
+    },
+	
 	
 	toJSON: function(obj){
 		var json = new global.JSON();
 		var val =  json.encode(obj);
-		// gs.info(val);
+		 gs.info(val);
 		return val;
 	},
 	
@@ -174,7 +281,7 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 			var err = "RESTCall throw error: " + ex;
 			gs.info(err);
 			restErr += err;
-			this.setRestErr(restErr);
+			//this.setRestErr(restErr);
 			return {statusCode: 3, error: restErr, httpStatus: 500};			
 			
 		} finally {
@@ -187,6 +294,7 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 		if(method == "post"){
 			return this._returnPostResponse(response, httpStatus, responseBody); 
 		}
+		
 		if(method == "get") {
 			return {statusCode: 200, responseBody: responseBody, httpStatus: httpStatus};
 		}
@@ -203,8 +311,8 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 	},
 	
 	_returnPostResponse: function(response, httpStatus, responseBody){
-		// var reqLocation = response.getHeader("Location");
-		return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus}; 
+		var reqLocation = response.getHeader("Location");
+		return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus, reqLocation: reqLocation}; 
 	},
 	
 	
@@ -224,21 +332,21 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
     type: 'VPLEX_VMAX_Abstract_RestApi'
 };
 
-VPLEX_VMAX_Abstract_RestApi.get =function(){
-	return new VPLEX_VMAX_Abstract_RestApi();
+VPLEX_VMAX_Abstract_RestApi.get =function(endpoint_sysid){
+	return new VPLEX_VMAX_Abstract_RestApi(endpoint_sysid);
 };
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-22 11:13:40</sys_created_on>
         <sys_id>5bd3cafc1b2200103ecd4196bc4bcb94</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>VPLEX_VMAX_Abstract_RestApi</sys_name>
         <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
         <sys_update_name>sys_script_include_5bd3cafc1b2200103ecd4196bc4bcb94</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-27 10:11:38</sys_updated_on>
+        <sys_updated_on>2020-03-06 11:47:00</sys_updated_on>
     </sys_script_include>
 </record_update>

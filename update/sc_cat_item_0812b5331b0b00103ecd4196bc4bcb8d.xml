@@ -25,7 +25,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Add VPLEX Adapter</name>
+        <name>Add Vplex Adapter</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -41,13 +41,13 @@
         <order>0</order>
         <ordered_item_link/>
         <picture/>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=e5da344e1b3600103ecd4196bc4bcbcd&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=0812b5331b0b00103ecd4196bc4bcb8d&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
         <request_method/>
         <roles/>
-        <sc_catalogs/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <short_description/>
@@ -55,16 +55,16 @@
         <start_closed>false</start_closed>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-07 13:16:32</sys_created_on>
-        <sys_id>e5da344e1b3600103ecd4196bc4bcbcd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Add VPLEX Adapter</sys_name>
+        <sys_created_on>2020-02-25 14:04:15</sys_created_on>
+        <sys_id>0812b5331b0b00103ecd4196bc4bcb8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add Vplex Adapter</sys_name>
         <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
         <sys_policy/>
         <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
-        <sys_update_name>sc_cat_item_e5da344e1b3600103ecd4196bc4bcbcd</sys_update_name>
+        <sys_update_name>sc_cat_item_0812b5331b0b00103ecd4196bc4bcb8d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-12 11:07:28</sys_updated_on>
+        <sys_updated_on>2020-02-25 14:04:15</sys_updated_on>
         <template/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
@@ -74,22 +74,22 @@
         <visible_standalone>true</visible_standalone>
         <workflow display_value="Add Adapter">6dae3c021b7600103ecd4196bc4bcb11</workflow>
     </sc_cat_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=e5da344e1b3600103ecd4196bc4bcbcd"/>
-    <fx_price action="delete_multiple" query="id=e5da344e1b3600103ecd4196bc4bcbcd"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=0812b5331b0b00103ecd4196bc4bcb8d"/>
+    <fx_price action="delete_multiple" query="id=0812b5331b0b00103ecd4196bc4bcb8d"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price</field>
-        <id>e5da344e1b3600103ecd4196bc4bcbcd</id>
+        <id>0812b5331b0b00103ecd4196bc4bcb8d</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-07 13:16:32</sys_created_on>
-        <sys_id>8dfafc0e1b3600103ecd4196bc4bcbeb</sys_id>
+        <sys_created_on>2020-02-25 14:04:15</sys_created_on>
+        <sys_id>53727d331b0b00103ecd4196bc4bcb3a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-07 13:16:32</sys_updated_on>
+        <sys_updated_on>2020-02-25 14:04:15</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>
@@ -97,16 +97,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>recurring_price</field>
-        <id>e5da344e1b3600103ecd4196bc4bcbcd</id>
+        <id>0812b5331b0b00103ecd4196bc4bcb8d</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-02-07 13:16:32</sys_created_on>
-        <sys_id>c1fafc0e1b3600103ecd4196bc4bcbed</sys_id>
+        <sys_created_on>2020-02-25 14:04:15</sys_created_on>
+        <sys_id>9f727d331b0b00103ecd4196bc4bcb3a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-02-07 13:16:32</sys_updated_on>
+        <sys_updated_on>2020-02-25 14:04:15</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>

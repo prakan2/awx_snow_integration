@@ -7,31 +7,27 @@
         <name>Test Rest Api</name>
         <record_for_rollback>false</record_for_rollback>
         <run_once>true</run_once>
-        <script><![CDATA[var id = "9b7a846d1ba200103ecd4196bc4bcbcc";
-var restApi = new VPLEX_VMAX_Abstract_RestApi(id);
-gs.info("done");
-var url = 'vco/api/workflows/';
-var rest = restApi.RESTCall(url, "get", null);
-gs.debug(rest.responseBody);
-	gs.info("entered inside");
-// var url = 'vco/api/workflows/2bb99896-ac2b-4f67-8066-84d00ef012ab/executions/';
-//  var jsonTry =  new global.JSON();
-//  var parameters = '{"parameters":[{"value":{"string":{"value":"6d262a2a-8fca-4b36-ab65-4dc972079131"}},"type":"string","name":"workflowId","scope":"local"},{"value":{"string":{"value":"shankar"}},"type":"string","name":"ClusterNameorUUID","scope":"local"}]}';
-//  var payload = jsonTry.decode(parameters);
-// var rest = restApi.RESTCall(url, "post", payload);
-// gs.info(rest.getResponseBody);]]></script>
+        <script><![CDATA[gs.info("Entering the script snippet");
+	var id = "e7d249971b7640103ecd4196bc4bcb74";
+	var restApi = new VPLEX_VMAX_RestApi(id,true);
+	var workflowId = "77ad3416-5b3b-4984-88b0-4bcbc8d96caf";
+    var payload = {"parameters":[{"value":{"string":{"value":"vplex_test"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"10.241.164.107"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"labusers"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"labusers"}},"type":"String","name":"password","scope":"local"},{"value":{"number":{"value":443}},"type":"number","name":"port","scope":"local"}]};
+var response = restApi.executeWorkflow(workflowId,payload);
+//gs.info("Response: " + JSON.stringify(response));
+gs.info("Output" + response.responseBody);
+]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-22 11:28:04</sys_created_on>
         <sys_id>bb754afc1b2200103ecd4196bc4bcbff</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Test Rest Api</sys_name>
         <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
         <sys_policy/>
         <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
         <sys_update_name>sys_script_fix_bb754afc1b2200103ecd4196bc4bcbff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-01-27 14:03:36</sys_updated_on>
+        <sys_updated_on>2020-03-06 11:47:14</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

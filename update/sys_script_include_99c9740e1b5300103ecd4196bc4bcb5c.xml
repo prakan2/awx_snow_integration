@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_440435_vplex_vma.VPLEX_VMAX_RestApi</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>VPLEX_VMAX_RestApi</name>
+        <script><![CDATA[var VPLEX_VMAX_RestApi = Class.create();
+VPLEX_VMAX_RestApi.prototype = Object.extendsObject(VPLEX_VMAX_Abstract_RestApi, {
+LOGIN_ENDPOINT: "vco/api/workflows/",	
+
+	getRestToken: function(){
+	try{
+		if(gs.nil(this._controlRecord)){
+			this.setRestErr("Unable to find the vRO instance while trying to get token.");
+			return {statusCode: 3, 
+					error: "Unable to find the vRO instance.", 
+					httpStatus: 900};	
+		}
+		var r = this._setRestRequest(this.LOGIN_ENDPOINT, "post");
+		
+		// var password = this._controlRecord.credential.password.getDecryptedValue().toString();
+		// var username = this._controlRecord.credential.username.toString();
+		var password = this._controlRecord.password.getDecryptedValue().toString();
+		var username = this._controlRecord.username.toString();
+
+		gs.info("Username " + username);
+		//gs.info("Password " + password);
+		var requestPayload = {};	
+		requestPayload.username = username;
+		requestPayload.password = password;
+	//	requestPayload.tenant = this._controlRecord.tenant.toString();
+	//	gs.info("tenant: " + requestPayload.tenant);
+		
+		var json = this.toJSON(requestPayload);
+		r.setRequestBody(json);		
+		var response = r.execute();
+		response.waitForResponse(200);// In seconds. Wait at most 60 seconds to get response from ECC Queue/Mid Server //Might throw exception timing out waiting for response in ECC queue.
+		if(response.haveError()){
+			var restErr = "Login call has error: " + response.getErrorMessage() + " ";
+			gs.info(restErr);
+			this.setRestErr(restErr);
+		}
+
+		var httpStatus = response.getStatusCode();
+		gs.info(": Login HTTP Status Code: " + httpStatus);
+		if(httpStatus == 200){
+			var responseBody = response.getBody();	
+			gs.info(": responseBody: " + responseBody);
+			// Get the token from response body JSON and set to this.setToken()	
+			if(responseBody != null){
+				var params = new global.JSON().decode(responseBody);			
+				var authToken = params.id;		
+
+				gs.info(": authToken: " + authToken);
+				if(!gs.nil(authToken)){
+					this.setToken("Bearer " + authToken);				
+                    return {statusCode: 0, 	authToken: "Bearer " + authToken,
+                        responseBody: responseBody, httpStatus: httpStatus,
+                            authorized: this.isAuthorized()};
+                }
+			}
+		}
+		return {statusCode: 1, 
+				error:"Response did not return a 200 or response body is null.", 
+				httpStatus: httpStatus};
+
+		} catch(ex) {
+			var err = "Login throw error: " + ex.getMessage();
+			gs.info(err);
+			this.setRestErr(err);
+			return {statusCode: 2, 
+					error: err, 
+					httpStatus: 500};			
+			
+		} finally {
+			
+		}
+	},
+	
+	_returnPostResponse: function(response, httpStatus, responseBody){
+		var reqLocation = response.getHeader("Location");
+		return {statusCode: 0, responseBody: responseBody, 
+				reqLocation: reqLocation, httpStatus: httpStatus}; 
+	},
+	
+
+    type: 'VPLEX_VMAX_RestApi'
+});
+
+VPLEX_VMAX_RestApi.get = function(endpoint_sysid){
+	return new VPLEX_VMAX_RestApi(endpoint_sysid);
+};
+	]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-03 10:17:07</sys_created_on>
+        <sys_id>99c9740e1b5300103ecd4196bc4bcb5c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>VPLEX_VMAX_RestApi</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>sys_script_include_99c9740e1b5300103ecd4196bc4bcb5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-04 12:18:52</sys_updated_on>
+    </sys_script_include>
+</record_update>
