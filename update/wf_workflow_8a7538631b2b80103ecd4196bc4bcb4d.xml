@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{"427574271b2b80103ecd4196bc4bcba3":"c67538631b2b80103ecd4196bc4bcb53","027538631b2b80103ecd4196bc4bcb54":"427538631b2b80103ecd4196bc4bcb53","867574271b2b80103ecd4196bc4bcba4":"467538631b2b80103ecd4196bc4bcb52","4a7538631b2b80103ecd4196bc4bcb55":"4a7538631b2b80103ecd4196bc4bcb52","c67574271b2b80103ecd4196bc4bcba1":"c27538631b2b80103ecd4196bc4bcb53","867574271b2b80103ecd4196bc4bcb9e":"c67538631b2b80103ecd4196bc4bcb52"},"ends":["8e7574271b2b80103ecd4196bc4bcb9f"],"stages":{"c67538631b2b80103ecd4196bc4bcb53":{"duration":"","order":100,"stageId":"c67538631b2b80103ecd4196bc4bcb53","name":"status check from VRO to SNOW","value":"stage_5"},"c27538631b2b80103ecd4196bc4bcb53":{"duration":"","order":100,"stageId":"c27538631b2b80103ecd4196bc4bcb53","name":"Closed Incomplete","value":"stage_7"},"c67538631b2b80103ecd4196bc4bcb52":{"duration":"","order":100,"stageId":"c67538631b2b80103ecd4196bc4bcb52","name":"Status check from SNOW to VRO","value":"stage_3"},"427538631b2b80103ecd4196bc4bcb53":{"duration":"","order":100,"stageId":"427538631b2b80103ecd4196bc4bcb53","name":"Initiate the SNOW to VRO call ","value":"stage_2"},"467538631b2b80103ecd4196bc4bcb52":{"duration":"","order":100,"stageId":"467538631b2b80103ecd4196bc4bcb52","name":"CallBack from VRO to SNOW","value":"stage_4"},"4a7538631b2b80103ecd4196bc4bcb52":{"duration":"","order":100,"stageId":"4a7538631b2b80103ecd4196bc4bcb52","name":"closed Complete","value":"stage_6"}},"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Adding vmax adapter</description>
+        <expected_sequences>c27574271b2b80103ecd4196bc4bcba2,c27574271b2b80103ecd4196bc4bcba5,027538631b2b80103ecd4196bc4bcb54,867574271b2b80103ecd4196bc4bcb9e,867574271b2b80103ecd4196bc4bcba4,427574271b2b80103ecd4196bc4bcba3,4a7538631b2b80103ecd4196bc4bcb55,8e7574271b2b80103ecd4196bc4bcb9f</expected_sequences>
+        <expected_time/>
+        <expected_time_type/>
+        <full_sequences>c27574271b2b80103ecd4196bc4bcba2,c27574271b2b80103ecd4196bc4bcba5,027538631b2b80103ecd4196bc4bcb54,867574271b2b80103ecd4196bc4bcb9e,867574271b2b80103ecd4196bc4bcba4,c67574271b2b80103ecd4196bc4bcba1,427574271b2b80103ecd4196bc4bcba3,8e7574271b2b80103ecd4196bc4bcb9f,4a7538631b2b80103ecd4196bc4bcb55</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Add VPLEX ADAPTER</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">c27574271b2b80103ecd4196bc4bcba2</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>8a7538631b2b80103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:17:48</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4d</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Adding vmax adapter</description>
+        <name>Add VPLEX ADAPTER</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a7538631b2b80103ecd4196bc4bcb4d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Add VPLEX ADAPTER</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>wf_workflow_8a7538631b2b80103ecd4196bc4bcb4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:15:18</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>467538631b2b80103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>ce7538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7538631b2b80103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Initiate the SNOW to VRO call </name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>427538631b2b80103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>stage_2</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Status check from SNOW to VRO</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c67538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>stage_3</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>CallBack from VRO to SNOW</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>467538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>stage_4</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>status check from VRO to SNOW</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c67538631b2b80103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>stage_5</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>closed Complete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>stage_6</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Closed Incomplete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27538631b2b80103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>stage_7</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>ca7538631b2b80103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27574271b2b80103ecd4196bc4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c27574271b2b80103ecd4196bc4bcba2"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">c27574271b2b80103ecd4196bc4bcba2</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>8a7574271b2b80103ecd4196bc4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check The Inputs</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27574271b2b80103ecd4196bc4bcba5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:07:57</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>38</x>
+        <y>119</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c27574271b2b80103ecd4196bc4bcba5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c27574271b2b80103ecd4196bc4bcba5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>467574271b2b80103ecd4196bc4bcba5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:07:57</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+	workflow.info("Adapter_name :" + current.variables.name);&#13;
+	workflow.info("Vplex_host :" + current.variables.host);&#13;
+	workflow.info("Vplex_usrnm :" + current.variables.username);&#13;
+	workflow.info("Vplex_pwd :" + current.variables.password);&#13;
+	workflow.info("Vplex_port :" + current.variables.port);&#13;
+	}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c27574271b2b80103ecd4196bc4bcba5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>467574271b2b80103ecd4196bc4bcba5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:07:57</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+	workflow.info("Adapter_name :" + current.variables.name);&#13;
+	workflow.info("Vplex_host :" + current.variables.host);&#13;
+	workflow.info("Vplex_usrnm :" + current.variables.username);&#13;
+	workflow.info("Vplex_pwd :" + current.variables.password);&#13;
+	workflow.info("Vplex_port :" + current.variables.port);&#13;
+	}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check The Inputs">c27574271b2b80103ecd4196bc4bcba5</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7574271b2b80103ecd4196bc4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Closed Incomplete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Closed Incomplete">c27538631b2b80103ecd4196bc4bcb53</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c67574271b2b80103ecd4196bc4bcba1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:13:41</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>520</x>
+        <y>478</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c67574271b2b80103ecd4196bc4bcba1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c67574271b2b80103ecd4196bc4bcba1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7574271b2b80103ecd4196bc4bcba1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:13:41</sys_updated_on>
+        <value>state=4^short_description=The request is completed with error : ${workflow.scratchpad.error}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c67574271b2b80103ecd4196bc4bcba1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7574271b2b80103ecd4196bc4bcba1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:13:41</sys_updated_on>
+        <value>state=4^short_description=The request is completed with error : ${workflow.scratchpad.error}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Closed Incomplete">c67574271b2b80103ecd4196bc4bcba1</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7574271b2b80103ecd4196bc4bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>8e7574271b2b80103ecd4196bc4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>1001</x>
+        <y>522</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8e7574271b2b80103ecd4196bc4bcb9f"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Initiate the call to VRO</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Initiate the SNOW to VRO call ">427538631b2b80103ecd4196bc4bcb53</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>027538631b2b80103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:10:49</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>132</x>
+        <y>211</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=027538631b2b80103ecd4196bc4bcb54"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>027538631b2b80103ecd4196bc4bcb54</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867538631b2b80103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:10:49</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("WF: Running Add VPLEX Instance workflow");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
+var url = 'vco/api/workflows/77ad3416-5b3b-4984-88b0-4bcbc8d96caf/executions/';&#13;
+var adapter_name = current.variables.name;&#13;
+var Vplex_host = current.variables.host;&#13;
+var Vplex_usrnm = current.variables.username;&#13;
+var Vplex_pwd = current.variables.password;&#13;
+var Vplex_port = current.variables.port;&#13;
+&#13;
+var jsonTry =  new global.JSON();&#13;
+var payLo = '{"parameters":[{"value":{"string":{"value":"'+  adapter_name+'"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"'+Vplex_host+'"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"'+Vplex_usrnm+'"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"'+Vplex_pwd+'"}},"type":"String","name":"password","scope":"local"},{"value":{"number":{"value":'+Vplex_port+'}},"type":"number","name":"port","scope":"local"}]}';&#13;
+var payload = jsonTry.decode(payLo);&#13;
+var rest = restApi.RESTCall(url, "post", payload, false);&#13;
+workflow.scratchpad.responseValue = rest.response;&#13;
+workflow.scratchpad.statusCodeValue = rest.statusCode;&#13;
+workflow.scratchpad.error = rest.error;&#13;
+gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>027538631b2b80103ecd4196bc4bcb54</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867538631b2b80103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:10:49</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("WF: Running Add VPLEX Instance workflow");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
+var url = 'vco/api/workflows/77ad3416-5b3b-4984-88b0-4bcbc8d96caf/executions/';&#13;
+var adapter_name = current.variables.name;&#13;
+var Vplex_host = current.variables.host;&#13;
+var Vplex_usrnm = current.variables.username;&#13;
+var Vplex_pwd = current.variables.password;&#13;
+var Vplex_port = current.variables.port;&#13;
+&#13;
+var jsonTry =  new global.JSON();&#13;
+var payLo = '{"parameters":[{"value":{"string":{"value":"'+  adapter_name+'"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"'+Vplex_host+'"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"'+Vplex_usrnm+'"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"'+Vplex_pwd+'"}},"type":"String","name":"password","scope":"local"},{"value":{"number":{"value":'+Vplex_port+'}},"type":"number","name":"port","scope":"local"}]}';&#13;
+var payload = jsonTry.decode(payLo);&#13;
+var rest = restApi.RESTCall(url, "post", payload, false);&#13;
+workflow.scratchpad.responseValue = rest.response;&#13;
+workflow.scratchpad.statusCodeValue = rest.statusCode;&#13;
+workflow.scratchpad.error = rest.error;&#13;
+gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Initiate the call to VRO">027538631b2b80103ecd4196bc4bcb54</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>027538631b2b80103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Request Completed Successfully</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="closed Complete">4a7538631b2b80103ecd4196bc4bcb52</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7538631b2b80103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:13:19</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>847</x>
+        <y>106</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4a7538631b2b80103ecd4196bc4bcb55"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4a7538631b2b80103ecd4196bc4bcb55</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7538631b2b80103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:13:20</sys_updated_on>
+        <value>state=3^comments=The request is completed successfully with outputs : ${workflow.scratchpad.output}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4a7538631b2b80103ecd4196bc4bcb55</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7538631b2b80103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:13:20</sys_updated_on>
+        <value>state=3^comments=The request is completed successfully with outputs : ${workflow.scratchpad.output}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Request Completed Successfully">4a7538631b2b80103ecd4196bc4bcb55</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27538631b2b80103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Status check from SNOW to VRO</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Status check from SNOW to VRO">c67538631b2b80103ecd4196bc4bcb52</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867574271b2b80103ecd4196bc4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>305</x>
+        <y>329</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=867574271b2b80103ecd4196bc4bcb9e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcb9e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>027574271b2b80103ecd4196bc4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+function ifScript() {&#13;
+	var statusCode = workflow.scratchpad.statusCodeValue;&#13;
+	if (statusCode === 0) {&#13;
+		return 'yes';&#13;
+	} else {&#13;
+		return 'no';&#13;
+		&#13;
+	}&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcb9e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7574271b2b80103ecd4196bc4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcb9e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>8a7574271b2b80103ecd4196bc4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcb9e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>8a7574271b2b80103ecd4196bc4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcb9e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7574271b2b80103ecd4196bc4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcb9e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>027574271b2b80103ecd4196bc4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+function ifScript() {&#13;
+	var statusCode = workflow.scratchpad.statusCodeValue;&#13;
+	if (statusCode === 0) {&#13;
+		return 'yes';&#13;
+	} else {&#13;
+		return 'no';&#13;
+		&#13;
+	}&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Status check from SNOW to VRO">867574271b2b80103ecd4196bc4bcb9e</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>0a7574271b2b80103ecd4196bc4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Status check from SNOW to VRO">867574271b2b80103ecd4196bc4bcb9e</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867574271b2b80103ecd4196bc4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>status Check from VRO to SNOW</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="status check from VRO to SNOW">c67538631b2b80103ecd4196bc4bcb53</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>427574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>735</x>
+        <y>263</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=427574271b2b80103ecd4196bc4bcba3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>427574271b2b80103ecd4196bc4bcba3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	var statusCodeVal = workflow.scratchpad.statusCode;&#13;
+	gs.info("Value: " + statusCodeVal);&#13;
+     if (statusCodeVal === 0) {&#13;
+        return 'yes';&#13;
+     } else {&#13;
+     return 'no';&#13;
+	}&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>427574271b2b80103ecd4196bc4bcba3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>427574271b2b80103ecd4196bc4bcba3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>427574271b2b80103ecd4196bc4bcba3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>427574271b2b80103ecd4196bc4bcba3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>427574271b2b80103ecd4196bc4bcba3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4a7574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	var statusCodeVal = workflow.scratchpad.statusCode;&#13;
+	gs.info("Value: " + statusCodeVal);&#13;
+     if (statusCodeVal === 0) {&#13;
+        return 'yes';&#13;
+     } else {&#13;
+     return 'no';&#13;
+	}&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="status Check from VRO to SNOW">427574271b2b80103ecd4196bc4bcba3</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="status Check from VRO to SNOW">427574271b2b80103ecd4196bc4bcba3</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>ce7574271b2b80103ecd4196bc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>VRO to SNOW callBack Execution</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="CallBack from VRO to SNOW">467538631b2b80103ecd4196bc4bcb52</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>867574271b2b80103ecd4196bc4bcba4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:11:55</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+        <x>522</x>
+        <y>108</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=867574271b2b80103ecd4196bc4bcba4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcba4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>0a7574271b2b80103ecd4196bc4bcba4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:11:55</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("WF: Running Add VMAX Instance workflow - callback to vro");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+var util = VPLEX_VMAX_Abstract_RestApi.get(id);&#13;
+var response = workflow.scratchpad.responseValue;&#13;
+var rest = util._returVroResult(response);&#13;
+var responseVal = rest.response;&#13;
+var statusCode = rest.statusCode;&#13;
+var errorValue = rest.error;&#13;
+workflow.scratchpad.statusCode = statusCode;&#13;
+gs.info("Value:::: " + statusCode);	&#13;
+if (statusCode === 0) {&#13;
+	gs.info("Callback to vro has been completed Successfully");&#13;
+	var gRec = new GlideRecord('x_440435_vplex_vma_vplex_adapters'); &#13;
+	var value = current.variable_pool.name;&#13;
+	gs.info("Printed to be: " + value);&#13;
+	gRec.initialize(); &#13;
+	gRec.vplex_adapters = value;&#13;
+	gRec.insert();&#13;
+	var responseBody = responseVal.getBody();&#13;
+	workflow.scratchpad.output = responseBody['output-parameters'];&#13;
+} else {&#13;
+	gs.info("Callback to vro failed");&#13;
+	workflow.scratchpad.error = errorValue;&#13;
+}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>867574271b2b80103ecd4196bc4bcba4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>0a7574271b2b80103ecd4196bc4bcba4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 12:11:55</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("WF: Running Add VMAX Instance workflow - callback to vro");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+var util = VPLEX_VMAX_Abstract_RestApi.get(id);&#13;
+var response = workflow.scratchpad.responseValue;&#13;
+var rest = util._returVroResult(response);&#13;
+var responseVal = rest.response;&#13;
+var statusCode = rest.statusCode;&#13;
+var errorValue = rest.error;&#13;
+workflow.scratchpad.statusCode = statusCode;&#13;
+gs.info("Value:::: " + statusCode);	&#13;
+if (statusCode === 0) {&#13;
+	gs.info("Callback to vro has been completed Successfully");&#13;
+	var gRec = new GlideRecord('x_440435_vplex_vma_vplex_adapters'); &#13;
+	var value = current.variable_pool.name;&#13;
+	gs.info("Printed to be: " + value);&#13;
+	gRec.initialize(); &#13;
+	gRec.vplex_adapters = value;&#13;
+	gRec.insert();&#13;
+	var responseBody = responseVal.getBody();&#13;
+	workflow.scratchpad.output = responseBody['output-parameters'];&#13;
+} else {&#13;
+	gs.info("Callback to vro failed");&#13;
+	workflow.scratchpad.error = errorValue;&#13;
+}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="VRO to SNOW callBack Execution">867574271b2b80103ecd4196bc4bcba4</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>0e7574271b2b80103ecd4196bc4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4e7574271b2b80103ecd4196bc4bcba1</condition>
+        <from display_value="Closed Incomplete">c67574271b2b80103ecd4196bc4bcba1</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>027574271b2b80103ecd4196bc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="End">8e7574271b2b80103ecd4196bc4bcb9f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">027538631b2b80103ecd4196bc4bcb55</condition>
+        <from display_value="Initiate the call to VRO">027538631b2b80103ecd4196bc4bcb54</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>027574271b2b80103ecd4196bc4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="Status check from SNOW to VRO">867574271b2b80103ecd4196bc4bcb9e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8a7574271b2b80103ecd4196bc4bcba2</condition>
+        <from display_value="Begin">c27574271b2b80103ecd4196bc4bcba2</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>067574271b2b80103ecd4196bc4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="Check The Inputs">c27574271b2b80103ecd4196bc4bcba5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">867574271b2b80103ecd4196bc4bcb9f</condition>
+        <from display_value="Status check from SNOW to VRO">867574271b2b80103ecd4196bc4bcb9e</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>0a7574271b2b80103ecd4196bc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="VRO to SNOW callBack Execution">867574271b2b80103ecd4196bc4bcba4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">ce7574271b2b80103ecd4196bc4bcba3</condition>
+        <from display_value="status Check from VRO to SNOW">427574271b2b80103ecd4196bc4bcba3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>467574271b2b80103ecd4196bc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="Request Completed Successfully">4a7538631b2b80103ecd4196bc4bcb55</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0e7574271b2b80103ecd4196bc4bcba4</condition>
+        <from display_value="VRO to SNOW callBack Execution">867574271b2b80103ecd4196bc4bcba4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7574271b2b80103ecd4196bc4bcba6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="status Check from VRO to SNOW">427574271b2b80103ecd4196bc4bcba3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">4a7574271b2b80103ecd4196bc4bcba5</condition>
+        <from display_value="Check The Inputs">c27574271b2b80103ecd4196bc4bcba5</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7574271b2b80103ecd4196bc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="Initiate the call to VRO">027538631b2b80103ecd4196bc4bcb54</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">0a7574271b2b80103ecd4196bc4bcb9f</condition>
+        <from display_value="Status check from SNOW to VRO">867574271b2b80103ecd4196bc4bcb9e</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>8a7574271b2b80103ecd4196bc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="Closed Incomplete">c67574271b2b80103ecd4196bc4bcba1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">4e7574271b2b80103ecd4196bc4bcba3</condition>
+        <from display_value="status Check from VRO to SNOW">427574271b2b80103ecd4196bc4bcba3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c27574271b2b80103ecd4196bc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="Closed Incomplete">c67574271b2b80103ecd4196bc4bcba1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c27538631b2b80103ecd4196bc4bcb56</condition>
+        <from display_value="Request Completed Successfully">4a7538631b2b80103ecd4196bc4bcb55</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>c67574271b2b80103ecd4196bc4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <to display_value="End">8e7574271b2b80103ecd4196bc4bcb9f</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-20 11:30:34</sys_created_on>
+        <sys_id>4e7538631b2b80103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-20 11:30:34</sys_updated_on>
+        <workflow_version display_value="Add VPLEX ADAPTER">8a7538631b2b80103ecd4196bc4bcb4f</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=8a7538631b2b80103ecd4196bc4bcb4d^sys_id!=8a7538631b2b80103ecd4196bc4bcb4f">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label=" VPLEX Adapters" max_length="40" name="x_440435_vplex_vma_vplex_adapters" type="collection">
+        <element label="Vplex Adapters" max_length="40" name="vplex_adapters" type="string"/>
+    </element>
+</database>

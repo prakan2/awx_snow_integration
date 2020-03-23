@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_440435_vplex_vma_add_lun_to_existing_host_table" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>vplex_adapter</element>
+            <list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+            <sys_id>ef90f3881be200103ecd4196bc4bcb9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>vmax_adapter</element>
+            <list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+            <sys_id>6390f3881be200103ecd4196bc4bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>host_ip</element>
+            <list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+            <sys_id>e390f3881be200103ecd4196bc4bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>volume_name</element>
+            <list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+            <sys_id>6790f3881be200103ecd4196bc4bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>volume_size</element>
+            <list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+            <sys_id>e790f3881be200103ecd4196bc4bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_440435_vplex_vma_add_lun_to_existing_host_table</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a790f3881be200103ecd4196bc4bcb9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_440435_vplex_vma_add_lun_to_existing_host_table</sys_name>
+            <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+            <sys_update_name>sys_ui_list_x_440435_vplex_vma_add_lun_to_existing_host_table_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>sys_ui_list_x_440435_vplex_vma_add_lun_to_existing_host_table_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_440435_vplex_vma_add_lun_to_existing_host_table" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>vplex_adapter</element><list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-20 11:06:42</sys_created_on><sys_id>ef90f3881be200103ecd4196bc4bcb9f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-20 11:06:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>vmax_adapter</element><list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-20 11:06:42</sys_created_on><sys_id>6390f3881be200103ecd4196bc4bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-20 11:06:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>host_ip</element><list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-20 11:06:42</sys_created_on><sys_id>e390f3881be200103ecd4196bc4bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-20 11:06:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>volume_name</element><list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-20 11:06:42</sys_created_on><sys_id>6790f3881be200103ecd4196bc4bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-20 11:06:42</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>volume_size</element><list_id display_value="x_440435_vplex_vma_add_lun_to_existing_host_table" element="NULL" name="x_440435_vplex_vma_add_lun_to_existing_host_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">a790f3881be200103ecd4196bc4bcb9f</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-20 11:06:42</sys_created_on><sys_id>e790f3881be200103ecd4196bc4bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-20 11:06:42</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_440435_vplex_vma_add_lun_to_existing_host_table</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-20 11:06:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a790f3881be200103ecd4196bc4bcb9f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_440435_vplex_vma_add_lun_to_existing_host_table</sys_name><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>sys_ui_list_x_440435_vplex_vma_add_lun_to_existing_host_table_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-20 11:06:42</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>1694879507</payload_hash>
+        <record_name>Add Lun to Existing Host  Table</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-20 11:06:42</sys_created_on>
+        <sys_id>e790f3881be200103ecd4196bc4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fc2a21f040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-20 11:06:42</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>6390f3888be20010a4697175a2f93da2</update_guid>
+        <update_guid_history>6390f3888be20010a4697175a2f93da2:1694879507,4a80f78869e2001070d70298f0dcdb9e:648142859,db4037c827e20010d77c57272463389d:-621851608,594037c8dfe200105ed8b7f03d889412:1342221228,7d3532447e220010db740169c96e3a98:774762360</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 09:06:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>70c40148b3504d6c9289724742287b21</sys_id>
+        <sys_metadata>a790f3881be200103ecd4196bc4bcb9f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_440435_vplex_vma_add_lun_to_existing_host_table</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent display_value="">9c51b0931b1600103ecd4196bc4bcb21</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_440435_vplex_vma_add_lun_to_existing_host_table_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_440435_vplex_vma_add_lun_to_existing_host_table_null">e790f3881be200103ecd4196bc4bcba2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 09:06:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

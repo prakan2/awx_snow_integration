@@ -7,85 +7,25 @@
         <client_callable>false</client_callable>
         <description/>
         <name>VPLEX_VMAX_Abstract_RestApi</name>
-        <script><![CDATA[var MAX_TRIES = 10;
-var SLEEP_TIME_MS = 5000;
-// gs.sleep() scoping workaround - it is MUCH better to use a globally scoped
-// sleep() wrapper around gs.sleep()
-function sleep(ms) {
-  var endSleep = new GlideDuration().getNumericValue() + ms;
-  while ( new GlideDuration().getNumericValue() < endSleep) {
-   //wait 
-  }
-
-  return;
-}
-
-
-
-var VPLEX_VMAX_Abstract_RestApi = Class.create();
+        <script><![CDATA[var VPLEX_VMAX_Abstract_RestApi = Class.create();
 VPLEX_VMAX_Abstract_RestApi.prototype = {
-	
-	_controlRecord: null,	
-	_restErr: "",
-	_endpoint_sysid: null,
-	_authorizationToken: null,
-	_isAuthorized: false,
-	
-    initialize: function(endpoint_sysid, doInit) {
-		  this.endpoint_sysid = endpoint_sysid;
-		  this._controlRecord = this._getEndpointSetting(endpoint_sysid);
-		   if(doInit == undefined || doInit === true){
-			   this._init();	
-		   }
+    _controlRecord: null,   
+    _restErr: "",
+    _endpoint_sysid: null,
+   // _authorizationToken: null,
+    _isAuthorized: false,
+    
+    
+	setRestErr: function(error){
+        if(!gs.nil(this._restErr))
+            this._restErr += "\n";
+        this._restErr += error;
+       },
+    
+    getRestErr: function(){
+        return this._restErr;
     },
-	
-	_getEndpointSetting: function(endpoint_sysid){
-		var rec = new GlideRecord('x_440435_vplex_vma_vplex_vmax_endpoint_settings');
-		//rec.get(endpoint_sysid);
-		gs.info(endpoint_sysid);
-		var returnValue = rec.get(endpoint_sysid);
-		gs.info(returnValue); // logs true or false
-		return rec;
-	},
-
-	_init: function(){
-		var auth_type = this._controlRecord.authorization_type.toString();
-		switch(auth_type){
-			case "Basic Auth":
-				this.getToken();
-				break;
-		}
-	},
-	
-	getToken: function(){
-		this._isAuthorized = false;	
-	},
-	
-	isAuthorized: function(){
-		return this._isAuthorized;	
-	},
-	
-	setToken: function(token){
-		if(!gs.nil(token)){
-			this._authorizationToken = token;
-			this.setAuthorized(true);
-		}
-	},
-	
-	setAuthorized: function(auth){
-		this._isAuthorized = auth;
-	},
-	
-	setRestErr: function(restErr){
-		if(!gs.nil(this._restErr))
-			this._restErr += "\n";
-		this._restErr += restErr;
-	},
-	
-	getRestErr: function(){
-		return this._restErr;
-	},
-	
+    
     getTokenWithRetry: function(){
         for(var i = 0; i < 3; i++){
             var resp = this.getRestToken();
@@ -97,256 +37,266 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
                 this._pause(10000);
             }
         }
-
+ 
     },
-
-	_pause: function(time){
-		var t1 = new GlideDateTime().getNumericValue();
-		var t2 = new GlideDateTime().getNumericValue();
-		var duration = t2 - t1;
-		while(duration < time){
-			t2 = new GlideDateTime().getNumericValue();
-			duration = t2 - t1;
-		}
-	},	
-	
-	executeWorkflow: function(workflow, data) {
-		
-		var url = 'vco/api/workflows/' + workflow + '/executions';
-		var response = this.RESTCall(url, 'post', data);
-		var location = response.reqLocation;
-	//	var location = response.getHeader("Location");
-		if (!location) {
-			throw 'Error: no location in response header of vro request';
-		}
-		
-		// wait for process to finish
-	//	response = this.restGet(location);
-		response = this.restGet(response.reqLocation);
-		//gs.info("check" + response.getBody());
-		var rBody = JSON.parse(response.getBody());
-		gs.info('first response body: ' + rBody);
-		var status = rBody.state;
-		gs.info('first status: ' + status);
-		
-		var counter = 0;
-		while(status == 'running' && counter++ < MAX_TRIES) {
-			sleep(SLEEP_TIME_MS);
-		//	response = this.restGet(location);
-			response = this.restGet(response.reqLocation);
-			rBody = JSON.parse(response.getBody());
-			gs.info('   response: ' + JSON.stringify(response));
-			gs.info('   response body: ' + rBody);
-			status = rBody.state;
-			gs.info('   status: ' + status);
-		}
-		gs.info('final status: ' + status);
-		if(status !== 'completed') {
-			var exception = rBody['content-exception'];
-			throw 'Error executing workflow, status: ' + status + ' tries: ' + counter + " exception: " + exception;
-		}
-		//return response;
-		// check for output params
-		response = this.restGet(location);
-		gs.info(response.getBody());
-		rBody = JSON.parse(response.getBody());
-		gs.info("check  " + rBody['output-parameters']);
-		var output = rBody['output-parameters'];
-		gs.info(JSON.stringify(output));
-		return output;
-	},
-	
-	
-	restGet: function(url) {
-		var r = this._setRestRequestIgnoreBaseUrl(url, 'get');
-		var response = r.execute();
-        response.waitForResponse(300);
-        if (response.haveError()) {
-            gs.info("restGet call has error: " + response.getErrorMessage());
-			throw "restGet call has error: " + response.getErrorMessage();
+ 
+    _pause: function(time){
+        var t1 = new GlideDateTime().getNumericValue();
+        var t2 = new GlideDateTime().getNumericValue();
+        var duration = t2 - t1;
+        while(duration < time){
+            t2 = new GlideDateTime().getNumericValue();
+            duration = t2 - t1;
         }
-		return response;
-	},
-	
-	_setRestRequest: function(extraURL, method){
-		var r = new sn_ws.RESTMessageV2();
-		r.setRequestHeader("Content-Type", "application/json");
-		r.setRequestHeader("Accept", "application/json");
-		gs.info("Authorized: " + this.isAuthorized());
-		if(this.isAuthorized()){
-			r.setRequestHeader("Authorization", this.getToken());	
-		}
-		if(this._controlRecord.authorization_type.toString() == 'Basic Auth'){
-			var password = this._controlRecord.password.toString();
-			var username = this._controlRecord.username.toString();
-			gs.info('Basic Auth, user name: ' + username);
-			r.setBasicAuth(username, password);
-		}
-			
-		r.setHttpMethod(method);
-	    if(!(this._controlRecord.mid_server_list.nil())){
-			var mid = new GlideRecord('ecc_agent');
-			var sysids = this._controlRecord.mid_server_list.split(',');
-			mid.get(sysids[0]);
-			gs.info("mid server = " + mid.name.toString());
-			r.setMIDServer(mid.name.toString());
-		}		
-		
-		var baseUrl = this._controlRecord.base_url.toString();
-		if(baseUrl.charAt((baseUrl.length-1) != "/")){
-			baseUrl = baseUrl + "/";   
-		}
-		var url = baseUrl + extraURL;
-		gs.info("CS: URL: " + url);
-		r.setEndpoint(url);
-		return r;
-	},
-	
-	_setRestRequestIgnoreBaseUrl: function(url, method) {
+    },  
+    
+  
+    
+    _setRestRequest: function(extraURL, method,checkResultFlag){
         var r = new sn_ws.RESTMessageV2();
         r.setRequestHeader("Content-Type", "application/json");
         r.setRequestHeader("Accept", "application/json");
-        gs.info("Authorized: " + this._isAuthorized);
-        if (this._isAuthorized) {
-            r.setRequestHeader("Authorization", this.getToken());
+        gs.info("Authorized: " + this.isAuthorized());
+        if(this.isAuthorized()){
+            r.setRequestHeader("Authorization", this.getToken()); 
         }
-        if (this._controlRecord.authorization_type.toString() == 'Basic Auth') {
-            var password = this._controlRecord.password.toString();
-            var username = this._controlRecord.username.toString();
-            gs.info("Basic Auth, user name: " + username);
+		if (this._controlRecord.u_string_8.toString() == 'Token') {
+            var password = this._controlRecord.u_string_full_utf8_7.getDecryptedValue().toString();
+            var username = this._controlRecord.username.toString();      
+            gs.info('Basic Auth, user name: ' + username);
             r.setBasicAuth(username, password);
         }
-
+            
         r.setHttpMethod(method);
-		
-		if(!(this._controlRecord.mid_server_list.nil())){
-			var mid = new GlideRecord('ecc_agent');
-			var sysids = this._controlRecord.mid_server_list.split(',');
-			mid.get(sysids[0]);
-			gs.info("mid server = " + mid.name.toString());
-			r.setMIDServer(mid.name.toString());
-		}
-
+       // if(!(this._controlRecord.mid_server_list.nil())){
+	    if(!(this._controlRecord.mid_server_list.nil())){
+            var mid = new GlideRecord('ecc_agent');
+            var sysids = //this._controlRecord.mid_server_list.split(',');
+			this._controlRecord.mid_server_list.split(',');
+            mid.get(sysids[0]);
+            gs.info("mid server = " + mid.name.toString());
+            r.setMIDServer(mid.name.toString());
+        }       
+        
+		var url = "";
+		        if (checkResultFlag == false) {
+            var baseUrl = this._controlRecord.u_string_3.toString();
+            if (baseUrl.charAt((baseUrl.length - 1) != "/")) {
+                baseUrl = baseUrl + "/";
+            }
+            url = baseUrl + extraURL;
+        } else {
+            url = extraURL;
+        }
         gs.info("CS: URL: " + url);
         r.setEndpoint(url);
         return r;
     },
 	
-	
-	toJSON: function(obj){
-		var json = new global.JSON();
-		var val =  json.encode(obj);
-		 gs.info(val);
-		return val;
-	},
-	
-	RESTCall: function(url, method, jsonData){
-		var restErr = "";
+    _checkResult: function(response) {
+    
+        var location = response.getHeader("Location");
+        if (!location) {
+            throw 'Error: no location in response header of vro request';
+        }
+        
+        // wait for process to finish
+        response = this.RESTCall(location, 'get', true);
+        var responseBody = response.responseBody;
+        var rBody = JSON.parse(responseBody);
+        gs.info('first response body: ' + rBody);
+        var status = rBody.state;
+        gs.info('first status: ' + status);
+        
+        var counter = 0;
+        while(status == 'running' && counter++ < MAX_TRIES) {
+            sleep(SLEEP_TIME_MS);
+            response = this.RESTCall(location, 'get', true);
+            responseBody = response.responseBody;
+            rBody = JSON.parse(responseBody);
+            gs.info('   response body: ' + rBody);
+            status = rBody.state;
+            gs.info('   status: ' + status);
+        }
+        gs.info('final status: ' + status);
+        
+        if(status !== 'completed') {
+            gs.info("Value to be printed");
+            var exception = rBody['content-exception'];
+            throw 'Error executing workflow, status: ' + status + ' tries: ' + counter + 'with exception: '+ exception;
+        }
+        
+        response = this.RESTCall(location, 'get', true);
+        return response;
+    },
+    
+  
+    toJSON: function(obj){
+        var json = new global.JSON();
+        var val =  json.encode(obj);
+         gs.info(val);
+        return val;
+    },
+    
+    RESTCall: function(url, method, jsonData,checkResultFlag){
+        var restErr = "";
         try{
-			restErr = "RESTCall URL: " + url + ", method: " + method + ". ";	
-            gs.info(restErr);	
-            // gs.info("RESTCall method: " + method);
+            restErr = "RESTCall URL: " + url + ", method: " + method + ". ";  
+            gs.info(restErr);   
             gs.info("RESTCall Json: " + jsonData);
             
-            var r = this._setRestRequest(url, method);	
+            var r = this._setRestRequest(url, method,checkResultFlag);  
             if(method == "post" && jsonData){
-				var jsondat = this.toJSON(jsonData);
-                r.setRequestBody(jsondat);	
+                var jsondat = this.toJSON(jsonData);
+                r.setRequestBody(jsondat);  
             }
             var response = r.execute();
             response.waitForResponse(300);
             if(response.haveError()){
-                gs.info("RESTCall call has error: " + response.getErrorMessage());	
-			}
+                gs.info("RESTCall call has error: " + response.getErrorMessage());    
+            }
             
             var httpStatus = response.getStatusCode();
             gs.info("RESTCall HTTP Status Code: " + httpStatus + "response: " + response.getBody());
             if((httpStatus == 200 || httpStatus == 201 || httpStatus == 202 || httpStatus == 204)){      // || httpStatus == 404
-				if (response.haveError()){
-					var restErr2 = "Success (" + httpStatus + ") with error message: " + response.getErrorMessage() + " ";
-					gs.debug(restErr2);
-					restErr += restErr2;
-				}
-				return this._returnRESTCallResult(response, method, httpStatus, restErr);
+				gs.debug(response.haveError);
+                if (response.haveError()){
+                    var restErr2 = "Success (" + httpStatus + ") with error message: " + response.getErrorMessage() + " ";
+                    gs.debug(restErr2);
+                    restErr += restErr2;
+                }
+                return this._returnRESTCallResult(response, method, httpStatus, restErr, checkResultFlag);
             }
             else{
-				var restErr4 = "RESTCall failed: " + response.getErrorMessage() + ". Http Status: " + httpStatus + " ";
-				gs.debug(restErr4);
-				restErr += restErr4;
-				this.setRestErr(restErr);
-				return {statusCode: 2,  error: restErr4, 
-                        httpStatus: httpStatus};	
-			}
-		} catch(ex) {
-			var err = "RESTCall throw error: " + ex;
-			gs.info(err);
-			restErr += err;
-			//this.setRestErr(restErr);
-			return {statusCode: 3, error: restErr, httpStatus: 500};			
-			
-		} finally {
-			gs.info("RESTCall Completed");
-		}                
-	},
+                var restErr4 = "RESTCall failed: " + response.getErrorMessage() + ". Http Status: " + httpStatus + " ";
+                gs.debug(restErr4);
+                restErr += restErr4;
+                this.setRestErr(restErr);
+                return {statusCode: 2,  
+						error: restErr4, 
+                        httpStatus: httpStatus};    
+            }
+        } catch(ex) {
+            var err = "RESTCall throw error: " + ex;
+            gs.info(err);
+            restErr += err;
+            //this.setRestErr(restErr);
+            return {statusCode: 3, error: restErr,httpStatus: 500};  
+        } finally {
+            gs.info("RESTCall Completed");
+        }                
+    },
+    
+    _returVroResult: function (response) {
+        try {
+                var output = this._checkResult(response);
+                return output;  
+            } catch (ex) {
+                return {
+                    statusCode: 3,
+                    error: ex,
+                    httpStatus: 500
+                };
+            }
+    },
+    
+    _returnRESTCallResult: function(response, method, httpStatus, restErr, checkResultFlag){
+	    var httpStatusUpdate ="";
+        var responseBody = response.getBody();
+        if(method == "post"){
+            return {statusCode: 0, response: response, httpStatus: httpStatus, responseBody: responseBody};
+        }
+        
+        if(method == "get") {
+            return {statusCode: 0, response: response, httpStatus: httpStatus, responseBody: responseBody};
+        }
+        
+        if(responseBody != null)
+            return {statusCode: 0, response: response, httpStatus: httpStatus,responseBody: responseBody}; 
+        else{
+            var restErr3 = "RESTCall call return " + httpStatus + " but response body is null. ";
+            gs.info(restErr3);
+            restErr += restErr3;
+            this.setRestErr(restErr);
+            return {statusCode: 1, error: restErr, httpStatus: httpStatus};
+        }       
+ 
+    },
 	
-	_returnRESTCallResult: function(response, method, httpStatus, restErr){
-		var responseBody = response.getBody();
-		if(method == "post"){
-			return this._returnPostResponse(response, httpStatus, responseBody); 
-		}
-		
-		if(method == "get") {
-			return {statusCode: 200, responseBody: responseBody, httpStatus: httpStatus};
-		}
-		
-		if(responseBody != null)
-			return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus}; 
-		else{
-			var restErr3 = "RESTCall call return " + httpStatus + " but response body is null. ";
-			gs.info(restErr3);
-			restErr += restErr3;
-			this.setRestErr(restErr);
-			return {statusCode: 1, error: restErr, httpStatus: httpStatus};
-		}		
-	},
+	initialize: function(endpoint_sysid, doInit) {
+          this.endpoint_sysid = endpoint_sysid;
+          this._controlRecord = this._getEndpointSetting(endpoint_sysid);
+           if(doInit == undefined || doInit === true){
+               this._init();    
+           }
+    },
+    
+    _getEndpointSetting: function(endpoint_sysid){
+        var rec = new GlideRecord('x_440435_vplex_vma_vplex_vmax_endpoint_settings');
+        rec.get(endpoint_sysid);
+        gs.info(endpoint_sysid);
+        var returnValue = rec.get(endpoint_sysid);
+        gs.info(returnValue); // logs true or false
+        return rec;
+    },
+ 
+    _init: function(){
+        var auth_type = this._controlRecord.u_string_8.toString();
+        switch(auth_type){
+            case "Token":
+                this.getToken();
+                break;
+        }
+    },
+    
+    getToken: function(){
+        this.setAuthorized(false);
+    },
 	
-	_returnPostResponse: function(response, httpStatus, responseBody){
-		var reqLocation = response.getHeader("Location");
-		return {statusCode: 0, responseBody: responseBody, httpStatus: httpStatus, reqLocation: reqLocation}; 
-	},
+	setAuthorized: function(auth){
+        this._isAuthorized = auth;
+    },
 	
-	
-	RESTCallGetwithRetry: function(url, retries){
-		var ret = {statusCode: 4};
-		for(var i = 0; i < retries; i++){
-			ret = this.RESTCall(url, "get", null);
-			if(ret.statusCode == 0)
-				return ret;
-			else{
-				gs.info("RESTCall failed, wait for 15 sec, retrying... " + i);
-				this._pause(15000);
-			}
-		}
-		return ret;
-	},
+  
+    isAuthorized: function(){
+        return this._isAuthorized;  
+    },
+    
+   
+    RESTCallGetwithRetry: function(url, retries){
+        var ret = {statusCode: 4};
+        for(var i = 0; i < retries; i++){
+            ret = this.RESTCall(url, "get", null);
+            if(ret.statusCode == 0)
+                return ret;
+            else{
+                gs.info("RESTCall failed, wait for 15 sec, retrying... " + i);
+                this._pause(15000);
+
+            }
+ 
+        }
+
+        return ret;
+    },
+ 
     type: 'VPLEX_VMAX_Abstract_RestApi'
 };
-
+ 
 VPLEX_VMAX_Abstract_RestApi.get =function(endpoint_sysid){
-	return new VPLEX_VMAX_Abstract_RestApi(endpoint_sysid);
-};
-]]></script>
+    return new VPLEX_VMAX_Abstract_RestApi(endpoint_sysid);
+};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-22 11:13:40</sys_created_on>
         <sys_id>5bd3cafc1b2200103ecd4196bc4bcb94</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>VPLEX_VMAX_Abstract_RestApi</sys_name>
         <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
         <sys_update_name>sys_script_include_5bd3cafc1b2200103ecd4196bc4bcb94</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-06 11:47:00</sys_updated_on>
+        <sys_updated_on>2020-03-19 08:10:33</sys_updated_on>
     </sys_script_include>
 </record_update>

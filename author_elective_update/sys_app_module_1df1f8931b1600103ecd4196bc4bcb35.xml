@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Add Lun to Existing Host ">55f1f8931b1600103ecd4196bc4bcb32</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Add Lun to Existing Host  Tables</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_440435_vplex_vma_add_lun_to_existing_host_table</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_440435_vplex_vma.add_lun_to_existing_host_table_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 13:18:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1df1f8931b1600103ecd4196bc4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Lun to Existing Host  Tables</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>sys_app_module_1df1f8931b1600103ecd4196bc4bcb35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 13:18:15</sys_updated_on>
+        <timeline_page/>
+        <title>Add Lun to Existing Host  Tables</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>sys_app_module_1df1f8931b1600103ecd4196bc4bcb35</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Add Lun to Existing Host ">55f1f8931b1600103ecd4196bc4bcb32</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Add Lun to Existing Host  Tables</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_440435_vplex_vma_add_lun_to_existing_host_table</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_440435_vplex_vma.add_lun_to_existing_host_table_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 13:18:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1df1f8931b1600103ecd4196bc4bcb35</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Add Lun to Existing Host  Tables</sys_name><sys_overrides/><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>sys_app_module_1df1f8931b1600103ecd4196bc4bcb35</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 13:18:15</sys_updated_on><timeline_page/><title>Add Lun to Existing Host  Tables</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1647950083</payload_hash>
+        <record_name>Add Lun to Existing Host  Tables</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 13:18:15</sys_created_on>
+        <sys_id>9df1f8931b1600103ecd4196bc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fb3a77bdd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 13:18:15</sys_updated_on>
+        <type>Module</type>
+        <update_guid>d5f1f8930b160010e0b3648b8498a638</update_guid>
+        <update_guid_history>d5f1f8930b160010e0b3648b8498a638:-1647950083</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Add Lun to Existing Host  Tables">0251c6361b6300103ecd4196bc4bcb5a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 09:06:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>133cdf495fc94f0f8b26e4e47d42fc39</sys_id>
+        <sys_metadata>1df1f8931b1600103ecd4196bc4bcb35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Lun to Existing Host  Tables</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>sys_app_module_1df1f8931b1600103ecd4196bc4bcb35</sys_update_name>
+        <sys_update_version display_value="sys_app_module_1df1f8931b1600103ecd4196bc4bcb35">9df1f8931b1600103ecd4196bc4bcb38</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 09:06:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

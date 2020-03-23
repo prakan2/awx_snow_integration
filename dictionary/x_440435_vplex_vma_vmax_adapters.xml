@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="VMAX Adapters" max_length="40" name="x_440435_vplex_vma_vmax_adapters" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="VMAX Adapters" max_length="40" name="vmax_adapters" type="string"/>
+    </element>
+</database>

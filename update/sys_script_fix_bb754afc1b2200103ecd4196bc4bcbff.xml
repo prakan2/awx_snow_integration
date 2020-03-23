@@ -7,27 +7,44 @@
         <name>Test Rest Api</name>
         <record_for_rollback>false</record_for_rollback>
         <run_once>true</run_once>
-        <script><![CDATA[gs.info("Entering the script snippet");
-	var id = "e7d249971b7640103ecd4196bc4bcb74";
-	var restApi = new VPLEX_VMAX_RestApi(id,true);
-	var workflowId = "77ad3416-5b3b-4984-88b0-4bcbc8d96caf";
-    var payload = {"parameters":[{"value":{"string":{"value":"vplex_test"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"10.241.164.107"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"labusers"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"labusers"}},"type":"String","name":"password","scope":"local"},{"value":{"number":{"value":443}},"type":"number","name":"port","scope":"local"}]};
-var response = restApi.executeWorkflow(workflowId,payload);
-//gs.info("Response: " + JSON.stringify(response));
-gs.info("Output" + response.responseBody);
-]]></script>
+        <script><![CDATA[// gs.info("Entering the script snippet");
+// var id = "dc4895ea1be300103ecd4196bc4bcb1c";
+// var restApi = new VPLEX_VMAX_Abstract_RestApi(id);
+// var url = 'vco/api/workflows/77ad3416-5b3b-4984-88b0-4bcbc8d96caf/executions';
+// var jsonTry =  new global.JSON();
+// var payLo = '{"parameters":[{"value":{"string":{"value":"vplexSnows"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"10.241.164.107"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"labusers"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"labusers"}},"type":"String","name":"password","scope":"local"},{"value":{"number":{"value":443}},"type":"number","name":"port","scope":"local"}]}';
+//  var payload = jsonTry.decode(payLo);
+//  var rest = restApi.RESTCall(url, "post", payload, false);
+//  var responseVal = rest.response;
+//  var restapiVal = restApi._returVroResult(responseVal);
+//  gs.info("Value:: " + rest.statusCode);
+// if(rest.statusCode == 0){
+// gs.info("Output" + rest.responseBody);
+
+// var restAPI1 = restApi._checkResult(responseVal);
+// gs.info("Error" + rest.getErrorMessage);
+// }
+var gReco = new GlideRecord('x_440435_vplex_vma_vmax_adapters');
+	var query = 'vmax_adapters=vmax123';
+	gReco.addQuery(query);
+	gReco.query();
+	while(gReco.next()) {
+		var sysIdVal = gReco.sys_id;
+		if(gReco.get(sysIdVal))
+			gReco.deleteRecord();
+	}]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-22 11:28:04</sys_created_on>
         <sys_id>bb754afc1b2200103ecd4196bc4bcbff</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>Test Rest Api</sys_name>
         <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
         <sys_policy/>
         <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
         <sys_update_name>sys_script_fix_bb754afc1b2200103ecd4196bc4bcbff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-06 11:47:14</sys_updated_on>
+        <sys_updated_on>2020-03-19 07:50:00</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Add Lun to Existing Host </name>
+        <order>100</order>
+        <roles>x_440435_vplex_vma.add_lun_to_existing_host_table_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 13:18:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>55f1f8931b1600103ecd4196bc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Lun to Existing Host </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>sys_app_application_55f1f8931b1600103ecd4196bc4bcb32</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 13:18:15</sys_updated_on>
+        <title>Add Lun to Existing Host </title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>sys_app_application_55f1f8931b1600103ecd4196bc4bcb32</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Add Lun to Existing Host </name><order>100</order><roles>x_440435_vplex_vma.add_lun_to_existing_host_table_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 13:18:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>55f1f8931b1600103ecd4196bc4bcb32</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Add Lun to Existing Host </sys_name><sys_overrides/><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>sys_app_application_55f1f8931b1600103ecd4196bc4bcb32</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 13:18:15</sys_updated_on><title>Add Lun to Existing Host </title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>1999458817</payload_hash>
+        <record_name>Add Lun to Existing Host </record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 13:18:15</sys_created_on>
+        <sys_id>55f1f8931b1600103ecd4196bc4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fb3a77b730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 13:18:15</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>9df1f89361160010669411fb8f754e34</update_guid>
+        <update_guid_history>9df1f89361160010669411fb8f754e34:1999458817</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Add Lun to Existing Host ">c7464e7a1b6300103ecd4196bc4bcb18</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-18 09:28:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>066208a9a301412e88142e2d005cf884</sys_id>
+        <sys_metadata>55f1f8931b1600103ecd4196bc4bcb32</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Lun to Existing Host </sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>sys_app_application_55f1f8931b1600103ecd4196bc4bcb32</sys_update_name>
+        <sys_update_version display_value="sys_app_application_55f1f8931b1600103ecd4196bc4bcb32">55f1f8931b1600103ecd4196bc4bcb35</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-18 09:28:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
