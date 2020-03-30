@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="volume_size" label="Volume Size" language="en" table="x_440435_vplex_vma_volumes_and_capacity">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>volume_size</element>
+            <help/>
+            <hint/>
+            <label>Volume Size</label>
+            <language>en</language>
+            <name>x_440435_vplex_vma_volumes_and_capacity</name>
+            <plural>Volume Sizes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-23 10:27:17</sys_created_on>
+            <sys_id>2cc3c0281bf300103ecd4196bc4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Volume Size</sys_name>
+            <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+            <sys_update_name>sys_documentation_x_440435_vplex_vma_volumes_and_capacity_volume_size_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-23 10:27:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

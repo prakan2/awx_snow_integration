@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Host and Lun Properties" max_length="40" name="x_440435_vplex_vma_volumes_and_capacity" type="collection">
+        <element label="Host Name" max_length="300" name="host_name" type="string"/>
+        <element label="Symmetrix ID" max_length="50" name="symmetrix_id" type="string"/>
+        <element label="Volume Names" max_length="40" name="volume_names" type="string"/>
+        <element label="Volume Size" max_length="40" name="volume_size" type="string"/>
+    </element>
+</database>
