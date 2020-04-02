@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["74dfbba31b37c4103ecd4196bc4bcbe7"],"subflows":[],"stages":{"b8dff7a31b37c4103ecd4196bc4bcb4e":{"duration":"","order":100,"stageId":"b8dff7a31b37c4103ecd4196bc4bcb4e","name":"status check from VRO to SNOW","value":"stage_5"},"b0dff7a31b37c4103ecd4196bc4bcb4f":{"duration":"","order":100,"stageId":"b0dff7a31b37c4103ecd4196bc4bcb4f","name":"Initiate the SNOW to VRO call ","value":"stage_2"},"b4dff7a31b37c4103ecd4196bc4bcb4f":{"duration":"","order":100,"stageId":"b4dff7a31b37c4103ecd4196bc4bcb4f","name":"Closed Incomplete","value":"stage_7"},"30dff7a31b37c4103ecd4196bc4bcb50":{"duration":"","order":100,"stageId":"30dff7a31b37c4103ecd4196bc4bcb50","name":"closed Complete","value":"stage_6"},"3cdff7a31b37c4103ecd4196bc4bcb4e":{"duration":"","order":100,"stageId":"3cdff7a31b37c4103ecd4196bc4bcb4e","name":"Status check from SNOW to VRO","value":"stage_3"},"bcdff7a31b37c4103ecd4196bc4bcb4f":{"duration":"","order":100,"stageId":"bcdff7a31b37c4103ecd4196bc4bcb4f","name":"CallBack from VRO to SNOW","value":"stage_4"}},"activities":{"f4dff7a31b37c4103ecd4196bc4bcb50":"b8dff7a31b37c4103ecd4196bc4bcb4e","3cdff7a31b37c4103ecd4196bc4bcb52":"30dff7a31b37c4103ecd4196bc4bcb50","74dfbba31b37c4103ecd4196bc4bcbe6":"b0dff7a31b37c4103ecd4196bc4bcb4f","f4dfbba31b37c4103ecd4196bc4bcbea":"3cdff7a31b37c4103ecd4196bc4bcb4e","34dfbba31b37c4103ecd4196bc4bcbe5":"b4dff7a31b37c4103ecd4196bc4bcb4f","74dfbba31b37c4103ecd4196bc4bcbe8":"bcdff7a31b37c4103ecd4196bc4bcb4f"}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Adding vmax adapter</description>
+        <expected_sequences>74dfbba31b37c4103ecd4196bc4bcbe9,fcdfbba31b37c4103ecd4196bc4bcbe3,74dfbba31b37c4103ecd4196bc4bcbe6,f4dfbba31b37c4103ecd4196bc4bcbea,70dff7a31b37c4103ecd4196bc4bcb54,74dfbba31b37c4103ecd4196bc4bcbe8,f4dff7a31b37c4103ecd4196bc4bcb50,3cdff7a31b37c4103ecd4196bc4bcb52,74dfbba31b37c4103ecd4196bc4bcbe7</expected_sequences>
+        <expected_time/>
+        <expected_time_type/>
+        <full_sequences>74dfbba31b37c4103ecd4196bc4bcbe9,fcdfbba31b37c4103ecd4196bc4bcbe3,74dfbba31b37c4103ecd4196bc4bcbe6,f4dfbba31b37c4103ecd4196bc4bcbea,70dff7a31b37c4103ecd4196bc4bcb54,34dfbba31b37c4103ecd4196bc4bcbe5,74dfbba31b37c4103ecd4196bc4bcbe8,74dfbba31b37c4103ecd4196bc4bcbe7,f4dff7a31b37c4103ecd4196bc4bcb50,3cdff7a31b37c4103ecd4196bc4bcb52</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>UseCase3: Remove Luns from existing hosts or cluster</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">74dfbba31b37c4103ecd4196bc4bcbe9</start>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb4d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:32:51</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="UseCase3: Remove Luns from existing hosts or cluster">18f1398b1b7f04103ecd4196bc4bcb19</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Adding vmax adapter</description>
+        <name>UseCase3: Remove Luns from existing hosts or cluster</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-31 12:53:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18f1398b1b7f04103ecd4196bc4bcb19</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UseCase3: Remove Luns from existing hosts or cluster</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>wf_workflow_18f1398b1b7f04103ecd4196bc4bcb19</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-31 13:08:27</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b8dff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>34dff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>38dff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Initiate the SNOW to VRO call </name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b0dff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>stage_2</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Status check from SNOW to VRO</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdff7a31b37c4103ecd4196bc4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>stage_3</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>CallBack from VRO to SNOW</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>bcdff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>stage_4</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>status check from VRO to SNOW</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b8dff7a31b37c4103ecd4196bc4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>stage_5</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>closed Complete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>stage_6</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Closed Incomplete</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dff7a31b37c4103ecd4196bc4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>stage_7</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>bcdff7a31b37c4103ecd4196bc4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>74dfbba31b37c4103ecd4196bc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74dfbba31b37c4103ecd4196bc4bcbe9"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">74dfbba31b37c4103ecd4196bc4bcbe9</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>74dfbba31b37c4103ecd4196bc4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>1001</x>
+        <y>522</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74dfbba31b37c4103ecd4196bc4bcbe7"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Initiate the REST call to VRO</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Initiate the SNOW to VRO call ">b0dff7a31b37c4103ecd4196bc4bcb4f</stage>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>74dfbba31b37c4103ecd4196bc4bcbe6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:32:19</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>132</x>
+        <y>211</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74dfbba31b37c4103ecd4196bc4bcbe6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74dfbba31b37c4103ecd4196bc4bcbe6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dfbba31b37c4103ecd4196bc4bcbe6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:32:19</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("&lt;&lt;WF: Remove LUN to existing host workflow&gt;&gt;");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+gs.info("ID:&gt;&gt; "+id);&#13;
+var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
+gs.info("restApi:&gt;&gt; "+restApi);&#13;
+var url = 'vco/api/workflows/e463f585-baed-4023-83fe-5e18e11986b0/executions/';&#13;
+&#13;
+	var vmaxname = current.variables.vmaxname;&#13;
+	var vplexname = current.variables.vplexname;&#13;
+	var volume_names = current.variables.volume_list;&#13;
+	var symmetrix_id = current.variables.symmetrix_id;&#13;
+	var allcluster = false;&#13;
+	&#13;
+	&#13;
+     /*if("No"!=add_all_cluster_nodes)&#13;
+		{&#13;
+			allcluster = true;&#13;
+		} */&#13;
+ &#13;
+&#13;
+&#13;
+var parameters = '{"parameters":[{"value":{"string":{"value":"'+volume_names+'"}},"type":"string","name":"volumeNames","scope":"local"},{"value":{"string":{"value":"'+symmetrix_id+'"}},"type":"string","name":"symm","scope":"local"},{"value":{"string":{"value":"'+allcluster+'"}},"type":"boolean","name":"removeToAllClusterNodes","scope":"local"}]}';&#13;
+	&#13;
+gs.info("vRO PAYLOAD =&gt;"+parameters);&#13;
+var jsonTry =  new global.JSON();&#13;
+var payload = jsonTry.decode(parameters);&#13;
+	&#13;
+gs.info("payload 2 =&gt;"+payload);&#13;
+&#13;
+var rest = restApi.RESTCall(url, "post", payload, false);&#13;
+gs.info(rest.responseBody);&#13;
+&#13;
+workflow.scratchpad.responseValue = rest.response;&#13;
+workflow.scratchpad.statusCodeValue = rest.statusCode;&#13;
+workflow.scratchpad.locationValue = rest.location;&#13;
+workflow.scratchpad.error = rest.error;&#13;
+gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
+	&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74dfbba31b37c4103ecd4196bc4bcbe6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dfbba31b37c4103ecd4196bc4bcbe6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:32:19</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("&lt;&lt;WF: Remove LUN to existing host workflow&gt;&gt;");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+gs.info("ID:&gt;&gt; "+id);&#13;
+var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
+gs.info("restApi:&gt;&gt; "+restApi);&#13;
+var url = 'vco/api/workflows/e463f585-baed-4023-83fe-5e18e11986b0/executions/';&#13;
+&#13;
+	var vmaxname = current.variables.vmaxname;&#13;
+	var vplexname = current.variables.vplexname;&#13;
+	var volume_names = current.variables.volume_list;&#13;
+	var symmetrix_id = current.variables.symmetrix_id;&#13;
+	var allcluster = false;&#13;
+	&#13;
+	&#13;
+     /*if("No"!=add_all_cluster_nodes)&#13;
+		{&#13;
+			allcluster = true;&#13;
+		} */&#13;
+ &#13;
+&#13;
+&#13;
+var parameters = '{"parameters":[{"value":{"string":{"value":"'+volume_names+'"}},"type":"string","name":"volumeNames","scope":"local"},{"value":{"string":{"value":"'+symmetrix_id+'"}},"type":"string","name":"symm","scope":"local"},{"value":{"string":{"value":"'+allcluster+'"}},"type":"boolean","name":"removeToAllClusterNodes","scope":"local"}]}';&#13;
+	&#13;
+gs.info("vRO PAYLOAD =&gt;"+parameters);&#13;
+var jsonTry =  new global.JSON();&#13;
+var payload = jsonTry.decode(parameters);&#13;
+	&#13;
+gs.info("payload 2 =&gt;"+payload);&#13;
+&#13;
+var rest = restApi.RESTCall(url, "post", payload, false);&#13;
+gs.info(rest.responseBody);&#13;
+&#13;
+workflow.scratchpad.responseValue = rest.response;&#13;
+workflow.scratchpad.statusCodeValue = rest.statusCode;&#13;
+workflow.scratchpad.locationValue = rest.location;&#13;
+workflow.scratchpad.error = rest.error;&#13;
+gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
+	&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Initiate the REST call to VRO">74dfbba31b37c4103ecd4196bc4bcbe6</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdfbba31b37c4103ecd4196bc4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Request Failed</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Closed Incomplete">b4dff7a31b37c4103ecd4196bc4bcb4f</stage>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>34dfbba31b37c4103ecd4196bc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>520</x>
+        <y>478</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=34dfbba31b37c4103ecd4196bc4bcbe5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>34dfbba31b37c4103ecd4196bc4bcbe5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dfbba31b37c4103ecd4196bc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>state=4^comments=The request failed with the message : ${workflow.scratchpad.error}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>34dfbba31b37c4103ecd4196bc4bcbe5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dfbba31b37c4103ecd4196bc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>state=4^comments=The request failed with the message : ${workflow.scratchpad.error}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Request Failed">34dfbba31b37c4103ecd4196bc4bcbe5</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>bcdfbba31b37c4103ecd4196bc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set the request to closed complete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="closed Complete">30dff7a31b37c4103ecd4196bc4bcb50</stage>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdff7a31b37c4103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>881</x>
+        <y>103</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3cdff7a31b37c4103ecd4196bc4bcb52"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cdff7a31b37c4103ecd4196bc4bcb52</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>state=3^comments=The request is completed successfully with outputs : ${workflow.scratchpad.output}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cdff7a31b37c4103ecd4196bc4bcb52</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>state=3^comments=The request is completed successfully with outputs : ${workflow.scratchpad.output}^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set the request to closed complete">3cdff7a31b37c4103ecd4196bc4bcb52</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b8dff7a31b37c4103ecd4196bc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Status check from SNOW to VRO</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Status check from SNOW to VRO">3cdff7a31b37c4103ecd4196bc4bcb4e</stage>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>305</x>
+        <y>331</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f4dfbba31b37c4103ecd4196bc4bcbea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dfbba31b37c4103ecd4196bc4bcbea</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dfbba31b37c4103ecd4196bc4bcbea</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dfbba31b37c4103ecd4196bc4bcbea</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+function ifScript() {&#13;
+	var statusCode = workflow.scratchpad.statusCodeValue;&#13;
+	gs.info("Printtttt: " + statusCode);&#13;
+	if (statusCode === 0) {&#13;
+		return 'yes';&#13;
+	} else {&#13;
+		return 'no';&#13;
+		&#13;
+	}&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dfbba31b37c4103ecd4196bc4bcbea</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dfbba31b37c4103ecd4196bc4bcbea</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dfbba31b37c4103ecd4196bc4bcbea</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdfbba31b37c4103ecd4196bc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+function ifScript() {&#13;
+	var statusCode = workflow.scratchpad.statusCodeValue;&#13;
+	gs.info("Printtttt: " + statusCode);&#13;
+	if (statusCode === 0) {&#13;
+		return 'yes';&#13;
+	} else {&#13;
+		return 'no';&#13;
+		&#13;
+	}&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Status check from SNOW to VRO">f4dfbba31b37c4103ecd4196bc4bcbea</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dfbba31b37c4103ecd4196bc4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Status check from SNOW to VRO">f4dfbba31b37c4103ecd4196bc4bcbea</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dfbba31b37c4103ecd4196bc4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>status Check from VRO to SNOW</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="status check from VRO to SNOW">b8dff7a31b37c4103ecd4196bc4bcb4e</stage>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dff7a31b37c4103ecd4196bc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>738</x>
+        <y>285</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f4dff7a31b37c4103ecd4196bc4bcb50"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dff7a31b37c4103ecd4196bc4bcb50</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>34dff7a31b37c4103ecd4196bc4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dff7a31b37c4103ecd4196bc4bcb50</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>7cdff7a31b37c4103ecd4196bc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dff7a31b37c4103ecd4196bc4bcb50</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dff7a31b37c4103ecd4196bc4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	var statusCodeVal = workflow.scratchpad.statusCode;&#13;
+	gs.info("Value: " + statusCodeVal);&#13;
+     if (statusCodeVal === 0) {&#13;
+        return 'yes';&#13;
+     } else {&#13;
+     return 'no';&#13;
+	}&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dff7a31b37c4103ecd4196bc4bcb50</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>7cdff7a31b37c4103ecd4196bc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dff7a31b37c4103ecd4196bc4bcb50</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>34dff7a31b37c4103ecd4196bc4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4dff7a31b37c4103ecd4196bc4bcb50</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dff7a31b37c4103ecd4196bc4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	var statusCodeVal = workflow.scratchpad.statusCode;&#13;
+	gs.info("Value: " + statusCodeVal);&#13;
+     if (statusCodeVal === 0) {&#13;
+        return 'yes';&#13;
+     } else {&#13;
+     return 'no';&#13;
+	}&#13;
+  }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="status Check from VRO to SNOW">f4dff7a31b37c4103ecd4196bc4bcb50</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>70dff7a31b37c4103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="status Check from VRO to SNOW">f4dff7a31b37c4103ecd4196bc4bcb50</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dff7a31b37c4103ecd4196bc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Validate the Inputs</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdfbba31b37c4103ecd4196bc4bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>39</x>
+        <y>118</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=fcdfbba31b37c4103ecd4196bc4bcbe3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcdfbba31b37c4103ecd4196bc4bcbe3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dfbba31b37c4103ecd4196bc4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+  gs.info("vmax_ip : " + current.variables.vmaxname);&#13;
+  gs.info("vplexip :"+ current.variables.vplexname);&#13;
+  gs.info("volume_names :"+ current.variables.volume_list);&#13;
+  gs.info("symmetrix_id :" + current.variables.symmetrix_id);&#13;
+  gs.info("add_all_cluster_nodes :" +current.variables.add_all_cluster_nodes);&#13;
+&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcdfbba31b37c4103ecd4196bc4bcbe3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dfbba31b37c4103ecd4196bc4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+  gs.info("vmax_ip : " + current.variables.vmaxname);&#13;
+  gs.info("vplexip :"+ current.variables.vplexname);&#13;
+  gs.info("volume_names :"+ current.variables.volume_list);&#13;
+  gs.info("symmetrix_id :" + current.variables.symmetrix_id);&#13;
+  gs.info("add_all_cluster_nodes :" +current.variables.add_all_cluster_nodes);&#13;
+&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Validate the Inputs">fcdfbba31b37c4103ecd4196bc4bcbe3</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>7cdfbba31b37c4103ecd4196bc4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>VRO to SNOW callBack Execution</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="CallBack from VRO to SNOW">bcdff7a31b37c4103ecd4196bc4bcb4f</stage>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>74dfbba31b37c4103ecd4196bc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>673</x>
+        <y>18</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74dfbba31b37c4103ecd4196bc4bcbe8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74dfbba31b37c4103ecd4196bc4bcbe8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dfbba31b37c4103ecd4196bc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("WF: Remove LUNs from existing host workflow - callback to vro");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+var util = VPLEX_VMAX_Abstract_RestApi.get(id);&#13;
+var response = workflow.scratchpad.locationVal;&#13;
+var rest = util._returVroResult(response);&#13;
+var responseVal = rest.response;&#13;
+var statusCode = rest.statusCode;&#13;
+var errorValue = rest.error;&#13;
+gs.info("Status code: " + statusCode + " ; response: " + responseVal + " ; error: " + errorValue);&#13;
+workflow.scratchpad.statusCode = statusCode;&#13;
+gs.info("Value:::: " + statusCode);	&#13;
+if (statusCode === 0) {&#13;
+gs.info("Callback to vro has been completed Successfully");&#13;
+var responseBody = rest.responseBody;&#13;
+var rBody = JSON.parse(responseBody);&#13;
+workflow.scratchpad.output = rBody['output-parameters'];&#13;
+} else {&#13;
+gs.info("Callback to vro failed");&#13;
+workflow.scratchpad.error = errorValue;&#13;
+}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74dfbba31b37c4103ecd4196bc4bcbe8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dfbba31b37c4103ecd4196bc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
+gs.info("WF: Remove LUNs from existing host workflow - callback to vro");&#13;
+var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
+var util = VPLEX_VMAX_Abstract_RestApi.get(id);&#13;
+var response = workflow.scratchpad.locationVal;&#13;
+var rest = util._returVroResult(response);&#13;
+var responseVal = rest.response;&#13;
+var statusCode = rest.statusCode;&#13;
+var errorValue = rest.error;&#13;
+gs.info("Status code: " + statusCode + " ; response: " + responseVal + " ; error: " + errorValue);&#13;
+workflow.scratchpad.statusCode = statusCode;&#13;
+gs.info("Value:::: " + statusCode);	&#13;
+if (statusCode === 0) {&#13;
+gs.info("Callback to vro has been completed Successfully");&#13;
+var responseBody = rest.responseBody;&#13;
+var rBody = JSON.parse(responseBody);&#13;
+workflow.scratchpad.output = rBody['output-parameters'];&#13;
+} else {&#13;
+gs.info("Callback to vro failed");&#13;
+workflow.scratchpad.error = errorValue;&#13;
+}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="VRO to SNOW callBack Execution">74dfbba31b37c4103ecd4196bc4bcbe8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdfbba31b37c4103ecd4196bc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>waiting time for backend to refresh</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>70dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+        <x>545</x>
+        <y>179</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=70dff7a31b37c4103ecd4196bc4bcb54"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>34dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>38dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>70dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+var respVal = workflow.scratchpad.responseValue.toString();&#13;
+var errorVal = workflow.scratchpad.errorVal;&#13;
+var locValue = workflow.scratchpad.locationValue;&#13;
+gs.info("printttt " + locValue);&#13;
+workflow.scratchpad.resValue = respVal;&#13;
+workflow.scratchpad.error = errorVal;&#13;
+workflow.scratchpad.locationVal = locValue;&#13;
+answer = 60;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>74dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>7cdff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b8dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>bcdff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f8dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>script</value>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>74dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>bcdff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>38dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>34dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f4dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b8dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f8dff7a31b37c4103ecd4196bc4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>7cdff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dff7a31b37c4103ecd4196bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70dff7a31b37c4103ecd4196bc4bcb54</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>70dff7a31b37c4103ecd4196bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+var respVal = workflow.scratchpad.responseValue.toString();&#13;
+var errorVal = workflow.scratchpad.errorVal;&#13;
+var locValue = workflow.scratchpad.locationValue;&#13;
+gs.info("printttt " + locValue);&#13;
+workflow.scratchpad.resValue = respVal;&#13;
+workflow.scratchpad.error = errorVal;&#13;
+workflow.scratchpad.locationVal = locValue;&#13;
+answer = 60;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="waiting time for backend to refresh">70dff7a31b37c4103ecd4196bc4bcb54</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>38dfbba31b37c4103ecd4196bc4bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">78dfbba31b37c4103ecd4196bc4bcbeb</condition>
+        <from display_value="Status check from SNOW to VRO">f4dfbba31b37c4103ecd4196bc4bcbea</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>30dfbba31b37c4103ecd4196bc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="Request Failed">34dfbba31b37c4103ecd4196bc4bcbe5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">38dfbba31b37c4103ecd4196bc4bcbe3</condition>
+        <from display_value="waiting time for backend to refresh">70dff7a31b37c4103ecd4196bc4bcb54</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>3cdfbba31b37c4103ecd4196bc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="VRO to SNOW callBack Execution">74dfbba31b37c4103ecd4196bc4bcbe8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">f0dff7a31b37c4103ecd4196bc4bcb52</condition>
+        <from display_value="status Check from VRO to SNOW">f4dff7a31b37c4103ecd4196bc4bcb50</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dfbba31b37c4103ecd4196bc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="Set the request to closed complete">3cdff7a31b37c4103ecd4196bc4bcb52</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">30dfbba31b37c4103ecd4196bc4bcbea</condition>
+        <from display_value="Begin">74dfbba31b37c4103ecd4196bc4bcbe9</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>78dfbba31b37c4103ecd4196bc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="Validate the Inputs">fcdfbba31b37c4103ecd4196bc4bcbe3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fcdfbba31b37c4103ecd4196bc4bcbe6</condition>
+        <from display_value="Initiate the REST call to VRO">74dfbba31b37c4103ecd4196bc4bcbe6</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b0dfbba31b37c4103ecd4196bc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="Status check from SNOW to VRO">f4dfbba31b37c4103ecd4196bc4bcbea</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7cdfbba31b37c4103ecd4196bc4bcbe4</condition>
+        <from display_value="Validate the Inputs">fcdfbba31b37c4103ecd4196bc4bcbe3</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dfbba31b37c4103ecd4196bc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="Initiate the REST call to VRO">74dfbba31b37c4103ecd4196bc4bcbe6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fcdfbba31b37c4103ecd4196bc4bcbe8</condition>
+        <from display_value="VRO to SNOW callBack Execution">74dfbba31b37c4103ecd4196bc4bcbe8</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>b4dfbba31b37c4103ecd4196bc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="status Check from VRO to SNOW">f4dff7a31b37c4103ecd4196bc4bcb50</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">f4dfbba31b37c4103ecd4196bc4bcbeb</condition>
+        <from display_value="Status check from SNOW to VRO">f4dfbba31b37c4103ecd4196bc4bcbea</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>bcdfbba31b37c4103ecd4196bc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="waiting time for backend to refresh">70dff7a31b37c4103ecd4196bc4bcb54</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">b8dff7a31b37c4103ecd4196bc4bcb53</condition>
+        <from display_value="Set the request to closed complete">3cdff7a31b37c4103ecd4196bc4bcb52</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dfbba31b37c4103ecd4196bc4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="End">74dfbba31b37c4103ecd4196bc4bcbe7</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">70dff7a31b37c4103ecd4196bc4bcb52</condition>
+        <from display_value="status Check from VRO to SNOW">f4dff7a31b37c4103ecd4196bc4bcb50</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f8dfbba31b37c4103ecd4196bc4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="Request Failed">34dfbba31b37c4103ecd4196bc4bcbe5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bcdfbba31b37c4103ecd4196bc4bcbe5</condition>
+        <from display_value="Request Failed">34dfbba31b37c4103ecd4196bc4bcbe5</from>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>fcdfbba31b37c4103ecd4196bc4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <to display_value="End">74dfbba31b37c4103ecd4196bc4bcbe7</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-04-02 12:30:22</sys_created_on>
+        <sys_id>f0dff7a31b37c4103ecd4196bc4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-04-02 12:30:22</sys_updated_on>
+        <workflow_version display_value="UseCase3: Remove Luns from existing hosts or cluster">30dff7a31b37c4103ecd4196bc4bcb4d</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=18f1398b1b7f04103ecd4196bc4bcb19^sys_id!=30dff7a31b37c4103ecd4196bc4bcb4d">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -95,15 +95,10 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
         return r;
     },
 	
-    _checkResult: function(response) {
-    
-        var location = response.getHeader("Location");
-        if (!location) {
-            throw 'Error: no location in response header of vro request';
-        }
+    _checkResult: function(respons) {
         
         // wait for process to finish
-        response = this.RESTCall(location, 'get', true);
+        response = this.RESTCall(respons, 'get', true);
         var responseBody = response.responseBody;
         var rBody = JSON.parse(responseBody);
         gs.info('first response body: ' + rBody);
@@ -125,10 +120,10 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
         if(status !== 'completed') {
             gs.info("Value to be printed");
             var exception = rBody['content-exception'];
-            throw 'Error executing workflow, status: ' + status + ' tries: ' + counter + 'with exception: '+ exception;
+            throw 'Error executing workflow, status: ' + status + ' with exception: ' + exception;
         }
         
-        response = this.RESTCall(location, 'get', true);
+        response = this.RESTCall(respons, 'get', true);
         return response;
     },
     
@@ -189,9 +184,9 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
         }                
     },
     
-    _returVroResult: function (response) {
+    _returVroResult: function (location) {
         try {
-                var output = this._checkResult(response);
+                var output = this._checkResult(location);
                 return output;  
             } catch (ex) {
                 return {
@@ -206,16 +201,18 @@ VPLEX_VMAX_Abstract_RestApi.prototype = {
 	    var httpStatusUpdate ="";
         var responseBody = response.getBody();
         if(method == "post"){
-            return {statusCode: 0, response: response, httpStatus: httpStatus, responseBody: responseBody};
+			var location = response.getHeader("Location");
+            return {statusCode: 0, response: response, httpStatus: httpStatus, responseBody: responseBody, location: location};
         }
         
         if(method == "get") {
             return {statusCode: 0, response: response, httpStatus: httpStatus, responseBody: responseBody};
         }
         
-        if(responseBody != null)
-            return {statusCode: 0, response: response, httpStatus: httpStatus,responseBody: responseBody}; 
-        else{
+        if(responseBody != null){
+			location = response.getHeader("Location");
+            return {statusCode: 0, response: response, httpStatus: httpStatus,location: location}; 
+		}else{
             var restErr3 = "RESTCall call return " + httpStatus + " but response body is null. ";
             gs.info(restErr3);
             restErr += restErr3;
@@ -292,13 +289,13 @@ VPLEX_VMAX_Abstract_RestApi.get =function(endpoint_sysid){
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-01-22 11:13:40</sys_created_on>
         <sys_id>5bd3cafc1b2200103ecd4196bc4bcb94</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>VPLEX_VMAX_Abstract_RestApi</sys_name>
         <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
         <sys_update_name>sys_script_include_5bd3cafc1b2200103ecd4196bc4bcb94</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-27 08:14:13</sys_updated_on>
+        <sys_updated_on>2020-03-30 13:52:37</sys_updated_on>
     </sys_script_include>
 </record_update>

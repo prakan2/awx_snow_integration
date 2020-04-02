@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="DELETE">
+        <default>true</default>
+        <sc_catalog display_value="Add New Replicated LUNs to Existing Host or Cluster">0af0b18b1b7f04103ecd4196bc4bcb38</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-03-31 12:49:27</sys_created_on>
+        <sys_id>7801b10b1b7f04103ecd4196bc4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add New Replicated LUNs to Existing Host or Cluster.catalog_add_new_replicated_luns_to_existing_host_or_cluster</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_add_new_replicated_luns_to_existing_host_or_cluster">3001b10b1b7f04103ecd4196bc4bcbaa</sys_portal_page>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_7801b10b1b7f04103ecd4196bc4bcbab</sys_update_name>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-03-31 12:49:27</sys_updated_on>
+    </sc_catalog_view_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</application>
+        <file_path/>
+        <instance_id>29cb581ddbc0809042b321c4059619ed</instance_id>
+        <instance_name>dev93606</instance_name>
+        <name>sc_catalog_view_mtom_7801b10b1b7f04103ecd4196bc4bcbab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom"><sc_catalog_view_mtom action="INSERT_OR_UPDATE"><default>true</default><sc_catalog display_value="Add New Replicated LUNs to Existing Host or Cluster">0af0b18b1b7f04103ecd4196bc4bcb38</sc_catalog><sys_class_name>sc_catalog_view_mtom</sys_class_name><sys_created_by>thangs12</sys_created_by><sys_created_on>2020-03-31 12:49:27</sys_created_on><sys_id>7801b10b1b7f04103ecd4196bc4bcbab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Add New Replicated LUNs to Existing Host or Cluster.catalog_add_new_replicated_luns_to_existing_host_or_cluster</sys_name><sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package><sys_policy/><sys_portal_page display_value="catalog_add_new_replicated_luns_to_existing_host_or_cluster">3001b10b1b7f04103ecd4196bc4bcbaa</sys_portal_page><sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope><sys_update_name>sc_catalog_view_mtom_7801b10b1b7f04103ecd4196bc4bcbab</sys_update_name><sys_updated_by>thangs12</sys_updated_by><sys_updated_on>2020-03-31 12:49:27</sys_updated_on></sc_catalog_view_mtom></record_update>]]></payload>
+        <payload_hash>-287451131</payload_hash>
+        <record_name>Add New Replicated LUNs to Existing Host or Cluster.catalog_add_new_replicated_luns_to_existing_host</record_name>
+        <reverted_from/>
+        <source>9054f3721bd200103ecd4196bc4bcbd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-03-31 12:49:27</sys_created_on>
+        <sys_id>f801f18b1b7f04103ecd4196bc4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17130a3b7870000001</sys_recorded_at>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-03-31 12:49:27</sys_updated_on>
+        <type>Catalog Portal Page</type>
+        <update_guid>3401f18b8d7f041034e30dbf50bae66c</update_guid>
+        <update_guid_history>3401f18b8d7f041034e30dbf50bae66c:-287451131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Add New Replicated LUNs to Existing Host or Cluster.catalog_add_new_replicated_l">7a91f58b1b7f04103ecd4196bc4bcbf9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>thangs12</sys_created_by>
+        <sys_created_on>2020-03-31 12:52:02</sys_created_on>
+        <sys_db_object display_value="" name="sc_catalog_view_mtom">sc_catalog_view_mtom</sys_db_object>
+        <sys_id>1c8fb4fe4e4a42f8ae167f72c2b6ec04</sys_id>
+        <sys_metadata>7801b10b1b7f04103ecd4196bc4bcbab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add New Replicated LUNs to Existing Host or Cluster.catalog_add_new_replicated_luns_to_existing_host_or_cluster</sys_name>
+        <sys_package display_value="VPLEX_VMAX_CATALOG" source="x_440435_vplex_vma">9c54f3721bd200103ecd4196bc4bcbcf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="VPLEX_VMAX_CATALOG">9c54f3721bd200103ecd4196bc4bcbcf</sys_scope>
+        <sys_scope_delete display_value="">24d03494c1224e539e0a2bbababe88d1</sys_scope_delete>
+        <sys_update_name>sc_catalog_view_mtom_7801b10b1b7f04103ecd4196bc4bcbab</sys_update_name>
+        <sys_update_version display_value="sc_catalog_view_mtom_7801b10b1b7f04103ecd4196bc4bcbab">f801f18b1b7f04103ecd4196bc4bcb6c</sys_update_version>
+        <sys_updated_by>thangs12</sys_updated_by>
+        <sys_updated_on>2020-03-31 12:52:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

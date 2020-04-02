@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"ends":["d97337221b3bc0103ecd4196bc4bcbd2"],"subflows":[],"stages":{"d97337221b3bc0103ecd4196bc4bcbcb":{"duration":"","order":100,"stageId":"d97337221b3bc0103ecd4196bc4bcbcb","name":"Initiate the SNOW to VRO call ","value":"stage_2"},"d97337221b3bc0103ecd4196bc4bcbca":{"duration":"","order":100,"stageId":"d97337221b3bc0103ecd4196bc4bcbca","name":"closed Complete","value":"stage_6"},"557337221b3bc0103ecd4196bc4bcbca":{"duration":"","order":100,"stageId":"557337221b3bc0103ecd4196bc4bcbca","name":"CallBack from VRO to SNOW","value":"stage_4"},"597337221b3bc0103ecd4196bc4bcbcb":{"duration":"","order":100,"stageId":"597337221b3bc0103ecd4196bc4bcbcb","name":"Closed Incomplete","value":"stage_7"},"d57337221b3bc0103ecd4196bc4bcbcb":{"duration":"","order":100,"stageId":"d57337221b3bc0103ecd4196bc4bcbcb","name":"status check from VRO to SNOW","value":"stage_5"},"517337221b3bc0103ecd4196bc4bcbcb":{"duration":"","order":100,"stageId":"517337221b3bc0103ecd4196bc4bcbcb","name":"Status check from SNOW to VRO","value":"stage_3"}},"activities":{"1d7337221b3bc0103ecd4196bc4bcbce":"d97337221b3bc0103ecd4196bc4bcbcb","917337221b3bc0103ecd4196bc4bcbcc":"d97337221b3bc0103ecd4196bc4bcbca","5573b7221b3bc0103ecd4196bc4bcb03":"d57337221b3bc0103ecd4196bc4bcbcb","d57337221b3bc0103ecd4196bc4bcbd3":"557337221b3bc0103ecd4196bc4bcbca","dd7337221b3bc0103ecd4196bc4bcbd1":"597337221b3bc0103ecd4196bc4bcbcb","597337221b3bc0103ecd4196bc4bcbcf":"517337221b3bc0103ecd4196bc4bcbcb"}}</activity_stages>
+        <activity_stages>{"ends":["8a47ec321bfbc0103ecd4196bc4bcbe6"],"subflows":[],"stages":{"ce4760321bfbc0103ecd4196bc4bcbe7":{"duration":"","order":100,"stageId":"ce4760321bfbc0103ecd4196bc4bcbe7","name":"Closed Incomplete","value":"stage_7"},"ca4760321bfbc0103ecd4196bc4bcbe8":{"duration":"","order":100,"stageId":"ca4760321bfbc0103ecd4196bc4bcbe8","name":"CallBack from VRO to SNOW","value":"stage_4"},"c24760321bfbc0103ecd4196bc4bcbe8":{"duration":"","order":100,"stageId":"c24760321bfbc0103ecd4196bc4bcbe8","name":"Status check from SNOW to VRO","value":"stage_3"},"4a4760321bfbc0103ecd4196bc4bcbe7":{"duration":"","order":100,"stageId":"4a4760321bfbc0103ecd4196bc4bcbe7","name":"status check from VRO to SNOW","value":"stage_5"},"4e4760321bfbc0103ecd4196bc4bcbe7":{"duration":"","order":100,"stageId":"4e4760321bfbc0103ecd4196bc4bcbe7","name":"Initiate the SNOW to VRO call ","value":"stage_2"},"4e4760321bfbc0103ecd4196bc4bcbe8":{"duration":"","order":100,"stageId":"4e4760321bfbc0103ecd4196bc4bcbe8","name":"closed Complete","value":"stage_6"}},"activities":{"8e47ec321bfbc0103ecd4196bc4bcbe5":"ca4760321bfbc0103ecd4196bc4bcbe8","c64760321bfbc0103ecd4196bc4bcbea":"ce4760321bfbc0103ecd4196bc4bcbe7","064760321bfbc0103ecd4196bc4bcbeb":"c24760321bfbc0103ecd4196bc4bcbe8","ce47ec321bfbc0103ecd4196bc4bcbde":"4a4760321bfbc0103ecd4196bc4bcbe7","4a4760321bfbc0103ecd4196bc4bcbec":"4e4760321bfbc0103ecd4196bc4bcbe7","864760321bfbc0103ecd4196bc4bcbe9":"4e4760321bfbc0103ecd4196bc4bcbe8"}}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -9,10 +9,10 @@
         <condition/>
         <condition_type/>
         <description>Adding vmax adapter</description>
-        <expected_sequences>1d7377221b3bc0103ecd4196bc4bcbfe,917337221b3bc0103ecd4196bc4bcbd1,1d7337221b3bc0103ecd4196bc4bcbce,597337221b3bc0103ecd4196bc4bcbcf,d57337221b3bc0103ecd4196bc4bcbd3,5573b7221b3bc0103ecd4196bc4bcb03,917337221b3bc0103ecd4196bc4bcbcc,d97337221b3bc0103ecd4196bc4bcbd2</expected_sequences>
+        <expected_sequences>c247ec321bfbc0103ecd4196bc4bcbe0,0647ec321bfbc0103ecd4196bc4bcbe4,4a4760321bfbc0103ecd4196bc4bcbec,064760321bfbc0103ecd4196bc4bcbeb,4e47ec321bfbc0103ecd4196bc4bcbe0,8e47ec321bfbc0103ecd4196bc4bcbe5,ce47ec321bfbc0103ecd4196bc4bcbde,864760321bfbc0103ecd4196bc4bcbe9,8a47ec321bfbc0103ecd4196bc4bcbe6</expected_sequences>
         <expected_time/>
         <expected_time_type/>
-        <full_sequences>1d7377221b3bc0103ecd4196bc4bcbfe,917337221b3bc0103ecd4196bc4bcbd1,1d7337221b3bc0103ecd4196bc4bcbce,597337221b3bc0103ecd4196bc4bcbcf,d57337221b3bc0103ecd4196bc4bcbd3,dd7337221b3bc0103ecd4196bc4bcbd1,5573b7221b3bc0103ecd4196bc4bcb03,d97337221b3bc0103ecd4196bc4bcbd2,917337221b3bc0103ecd4196bc4bcbcc</full_sequences>
+        <full_sequences>c247ec321bfbc0103ecd4196bc4bcbe0,0647ec321bfbc0103ecd4196bc4bcbe4,4a4760321bfbc0103ecd4196bc4bcbec,064760321bfbc0103ecd4196bc4bcbeb,4e47ec321bfbc0103ecd4196bc4bcbe0,c64760321bfbc0103ecd4196bc4bcbea,8e47ec321bfbc0103ecd4196bc4bcbe5,8a47ec321bfbc0103ecd4196bc4bcbe6,ce47ec321bfbc0103ecd4196bc4bcbde,864760321bfbc0103ecd4196bc4bcbe9</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>UseCase1: Add LUN to existing host</name>
@@ -27,13 +27,13 @@
         <schedule/>
         <stage_field>stage</stage_field>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">1d7377221b3bc0103ecd4196bc4bcbfe</start>
+        <start display_value="Begin">c247ec321bfbc0103ecd4196bc4bcbe0</start>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>c97337221b3bc0103ecd4196bc4bcbc8</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c64760321bfbc0103ecd4196bc4bcbe6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:04:05</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:49:47</sys_updated_on>
         <table>sc_req_item</table>
         <timezone/>
         <validated>true</validated>
@@ -68,283 +68,157 @@
         <ola>1970-01-01 00:00:00</ola>
         <order>1100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd7337221b3bc0103ecd4196bc4bcbca</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>464760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>complete</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Delivery</name>
         <ola>1970-01-03 00:00:00</ola>
         <order>140</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>557337221b3bc0103ecd4196bc4bcbcb</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca4760321bfbc0103ecd4196bc4bcbe7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>delivery</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Fulfillment</name>
         <ola>1970-01-02 00:00:00</ola>
         <order>120</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>597337221b3bc0103ecd4196bc4bcbca</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ce4760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>fulfillment</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Request Cancelled</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>1000</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d7337221b3bc0103ecd4196bc4bcbca</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c64760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>Request Cancelled</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Request Approved</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>90</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d17337221b3bc0103ecd4196bc4bcbcb</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>424760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>request_approved</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Initiate the SNOW to VRO call </name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d97337221b3bc0103ecd4196bc4bcbcb</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e4760321bfbc0103ecd4196bc4bcbe7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>stage_2</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Status check from SNOW to VRO</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>517337221b3bc0103ecd4196bc4bcbcb</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c24760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>stage_3</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>CallBack from VRO to SNOW</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>557337221b3bc0103ecd4196bc4bcbca</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca4760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>stage_4</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>status check from VRO to SNOW</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d57337221b3bc0103ecd4196bc4bcbcb</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbe7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>stage_5</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>closed Complete</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d97337221b3bc0103ecd4196bc4bcbca</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e4760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>stage_6</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Closed Incomplete</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>597337221b3bc0103ecd4196bc4bcbcb</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ce4760321bfbc0103ecd4196bc4bcbe7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>stage_7</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Waiting for Approval</name>
         <ola>1970-01-02 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d57337221b3bc0103ecd4196bc4bcbca</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>waiting_for_approval</value>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_stage>
-    <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>3</databus_lookup_id>
-        <height/>
-        <input>{}</input>
-        <is_parent>false</is_parent>
-        <name/>
-        <new_activity_definition/>
-        <notes/>
-        <out_of_date>false</out_of_date>
-        <parent/>
-        <pinned>false</pinned>
-        <pinned_version/>
-        <stage/>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d97337221b3bc0103ecd4196bc4bcbcd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <timeout>1970-01-01 00:00:00</timeout>
-        <vars/>
-        <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
-        <x>52</x>
-        <y>519</y>
-    </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d97337221b3bc0103ecd4196bc4bcbcd"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d97337221b3bc0103ecd4196bc4bcbcd</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd7337221b3bc0103ecd4196bc4bcbcd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>gs.info("Entering the script snippet");&#13;
-activity.result = run();&#13;
-&#13;
-function run() {&#13;
-	var id = "e7d249971b7640103ecd4196bc4bcb74";&#13;
-	var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
-	gs.info("done");&#13;
-var url = 'vco/api/workflows/4731495c-e02b-4226-b47f-aca5c8270a56/executions/';&#13;
- var adapter_name = current.variables.name;&#13;
- var vmax_host = current.variables.vmaxIP;&#13;
- var vmax_usrnm = current.variables.username;&#13;
- var vmax_pwd = current.variables.password;&#13;
- var vmax_port = current.variables.port;&#13;
- var symcli_host = current.variables.symcli_host;&#13;
- var symcli_usrnm = current.variables.symcli_usrnm;&#13;
- var symcli_pwd = current.variables.symcli_password;&#13;
- var symcli_port = current.variables.symcli_port;&#13;
- &#13;
- var jsonTry =  new global.JSON();&#13;
- var parameters = '{"parameters":[{"value":{"string":{"value": "'+ adapter_name+'"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"'+ vmax_host+'"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"'+ vmax_usrnm+'"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"'+  vmax_pwd+'"}},"type":"SecureString","name":"password","scope":"local"},{"value":{"number":{"value":'+ vmax_port+'}},"type":"number","name":"port","scope":"local"},{"value":{"string":{"value":"'+ symcli_host+'"}},"type":"string","name":"symcli_host","scope":"local"},{"value":{"number":{"value":'+ symcli_port+'}},"type":"number","name":"symcli_port","scope":"local"},{"value":{"string":{"value":"'+ symcli_usrnm+'"}},"type":"string","name":"symcli_username","scope":"local"},{"value":{"string":{"value":"'+  symcli_pwd+'"}},"type":"SecureString","name":"symcli_password","scope":"local"}]}';&#13;
- var payload = jsonTry.decode(parameters);&#13;
-var rest = restApi.RESTCall(url, "post", payload);&#13;
-gs.info(rest.getResponseBody);&#13;
-	gs.info(vmax_host + "----------" + symcli_host);&#13;
-}</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>d97337221b3bc0103ecd4196bc4bcbcd</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd7337221b3bc0103ecd4196bc4bcbcd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>gs.info("Entering the script snippet");&#13;
-activity.result = run();&#13;
-&#13;
-function run() {&#13;
-	var id = "e7d249971b7640103ecd4196bc4bcb74";&#13;
-	var restApi = new VPLEX_VMAX_Abstract_RestApi(id);&#13;
-	gs.info("done");&#13;
-var url = 'vco/api/workflows/4731495c-e02b-4226-b47f-aca5c8270a56/executions/';&#13;
- var adapter_name = current.variables.name;&#13;
- var vmax_host = current.variables.vmaxIP;&#13;
- var vmax_usrnm = current.variables.username;&#13;
- var vmax_pwd = current.variables.password;&#13;
- var vmax_port = current.variables.port;&#13;
- var symcli_host = current.variables.symcli_host;&#13;
- var symcli_usrnm = current.variables.symcli_usrnm;&#13;
- var symcli_pwd = current.variables.symcli_password;&#13;
- var symcli_port = current.variables.symcli_port;&#13;
- &#13;
- var jsonTry =  new global.JSON();&#13;
- var parameters = '{"parameters":[{"value":{"string":{"value": "'+ adapter_name+'"}},"type":"string","name":"name","scope":"local"},{"value":{"string":{"value":"'+ vmax_host+'"}},"type":"string","name":"host","scope":"local"},{"value":{"string":{"value":"'+ vmax_usrnm+'"}},"type":"string","name":"username","scope":"local"},{"value":{"string":{"value":"'+  vmax_pwd+'"}},"type":"SecureString","name":"password","scope":"local"},{"value":{"number":{"value":'+ vmax_port+'}},"type":"number","name":"port","scope":"local"},{"value":{"string":{"value":"'+ symcli_host+'"}},"type":"string","name":"symcli_host","scope":"local"},{"value":{"number":{"value":'+ symcli_port+'}},"type":"number","name":"symcli_port","scope":"local"},{"value":{"string":{"value":"'+ symcli_usrnm+'"}},"type":"string","name":"symcli_username","scope":"local"},{"value":{"string":{"value":"'+  symcli_pwd+'"}},"type":"SecureString","name":"symcli_password","scope":"local"}]}';&#13;
- var payload = jsonTry.decode(parameters);&#13;
-var rest = restApi.RESTCall(url, "post", payload);&#13;
-gs.info(rest.getResponseBody);&#13;
-	gs.info(vmax_host + "----------" + symcli_host);&#13;
-}</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
-    </sys_variable_value>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="">d97337221b3bc0103ecd4196bc4bcbcd</activity>
-        <condition>true</condition>
-        <condition_default/>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>true</is_positive>
-        <name>Always</name>
-        <order>0</order>
-        <short_description/>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>557337221b3bc0103ecd4196bc4bcbce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-    </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -361,21 +235,21 @@ gs.info(rest.getResponseBody);&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1d7377221b3bc0103ecd4196bc4bcbfe</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c247ec321bfbc0103ecd4196bc4bcbe0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1d7377221b3bc0103ecd4196bc4bcbfe"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c247ec321bfbc0103ecd4196bc4bcbe0"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">1d7377221b3bc0103ecd4196bc4bcbfe</activity>
+        <activity display_value="Begin">c247ec321bfbc0103ecd4196bc4bcbe0</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -389,11 +263,11 @@ gs.info(rest.getResponseBody);&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d17377221b3bc0103ecd4196bc4bcbff</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8647ec321bfbc0103ecd4196bc4bcbe0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -411,19 +285,19 @@ gs.info(rest.getResponseBody);&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d97337221b3bc0103ecd4196bc4bcbd2</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8a47ec321bfbc0103ecd4196bc4bcbe6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>1001</x>
         <y>522</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d97337221b3bc0103ecd4196bc4bcbd2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8a47ec321bfbc0103ecd4196bc4bcbe6"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -438,32 +312,32 @@ gs.info(rest.getResponseBody);&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Initiate the SNOW to VRO call ">d97337221b3bc0103ecd4196bc4bcbcb</stage>
+        <stage display_value="Initiate the SNOW to VRO call ">4e4760321bfbc0103ecd4196bc4bcbe7</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1d7337221b3bc0103ecd4196bc4bcbce</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>132</x>
         <y>211</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1d7337221b3bc0103ecd4196bc4bcbce"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4a4760321bfbc0103ecd4196bc4bcbec"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1d7337221b3bc0103ecd4196bc4bcbce</document_key>
+        <document_key>4a4760321bfbc0103ecd4196bc4bcbec</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9d7337221b3bc0103ecd4196bc4bcbce</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca4760321bfbc0103ecd4196bc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>activity.result = run();&#13;
 &#13;
 function run() {&#13;
@@ -503,15 +377,15 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1d7337221b3bc0103ecd4196bc4bcbce</document_key>
+        <document_key>4a4760321bfbc0103ecd4196bc4bcbec</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9d7337221b3bc0103ecd4196bc4bcbce</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca4760321bfbc0103ecd4196bc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>activity.result = run();&#13;
 &#13;
 function run() {&#13;
@@ -550,7 +424,7 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Initiate the REST call to VRO">1d7337221b3bc0103ecd4196bc4bcbce</activity>
+        <activity display_value="Initiate the REST call to VRO">4a4760321bfbc0103ecd4196bc4bcbec</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -564,11 +438,11 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>917337221b3bc0103ecd4196bc4bcbcf</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ce4760321bfbc0103ecd4196bc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -584,51 +458,51 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Closed Incomplete">597337221b3bc0103ecd4196bc4bcbcb</stage>
+        <stage display_value="Closed Incomplete">ce4760321bfbc0103ecd4196bc4bcbe7</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd7337221b3bc0103ecd4196bc4bcbd1</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c64760321bfbc0103ecd4196bc4bcbea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>520</x>
         <y>478</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=dd7337221b3bc0103ecd4196bc4bcbd1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c64760321bfbc0103ecd4196bc4bcbea"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>dd7337221b3bc0103ecd4196bc4bcbd1</document_key>
+        <document_key>c64760321bfbc0103ecd4196bc4bcbea</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>517337221b3bc0103ecd4196bc4bcbd2</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>state=4^comments=The request failed with the message : ${workflow.scratchpad.error}^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>dd7337221b3bc0103ecd4196bc4bcbd1</document_key>
+        <document_key>c64760321bfbc0103ecd4196bc4bcbea</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>517337221b3bc0103ecd4196bc4bcbd2</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>state=4^comments=The request failed with the message : ${workflow.scratchpad.error}^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Request Failed">dd7337221b3bc0103ecd4196bc4bcbd1</activity>
+        <activity display_value="Request Failed">c64760321bfbc0103ecd4196bc4bcbea</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -642,11 +516,11 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>557337221b3bc0103ecd4196bc4bcbd2</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e4760321bfbc0103ecd4196bc4bcbea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -662,51 +536,51 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="closed Complete">d97337221b3bc0103ecd4196bc4bcbca</stage>
+        <stage display_value="closed Complete">4e4760321bfbc0103ecd4196bc4bcbe8</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>917337221b3bc0103ecd4196bc4bcbcc</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>864760321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>881</x>
         <y>103</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=917337221b3bc0103ecd4196bc4bcbcc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=864760321bfbc0103ecd4196bc4bcbe9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>917337221b3bc0103ecd4196bc4bcbcc</document_key>
+        <document_key>864760321bfbc0103ecd4196bc4bcbe9</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>197337221b3bc0103ecd4196bc4bcbcc</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8a4760321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>state=3^comments=The request is completed successfully with outputs : ${workflow.scratchpad.output}^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>917337221b3bc0103ecd4196bc4bcbcc</document_key>
+        <document_key>864760321bfbc0103ecd4196bc4bcbe9</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>197337221b3bc0103ecd4196bc4bcbcc</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8a4760321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>state=3^comments=The request is completed successfully with outputs : ${workflow.scratchpad.output}^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set the request to closed complete">917337221b3bc0103ecd4196bc4bcbcc</activity>
+        <activity display_value="Set the request to closed complete">864760321bfbc0103ecd4196bc4bcbe9</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -720,11 +594,11 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>917337221b3bc0103ecd4196bc4bcbcd</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8e4760321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -740,60 +614,32 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Status check from SNOW to VRO">517337221b3bc0103ecd4196bc4bcbcb</stage>
+        <stage display_value="Status check from SNOW to VRO">c24760321bfbc0103ecd4196bc4bcbe8</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>597337221b3bc0103ecd4196bc4bcbcf</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>064760321bfbc0103ecd4196bc4bcbeb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>305</x>
-        <y>329</y>
+        <y>331</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=597337221b3bc0103ecd4196bc4bcbcf"/>
+    <sys_variable_value action="delete_multiple" query="document_key=064760321bfbc0103ecd4196bc4bcbeb"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>597337221b3bc0103ecd4196bc4bcbcf</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>117337221b3bc0103ecd4196bc4bcbd0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>1</value>
-        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>597337221b3bc0103ecd4196bc4bcbcf</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d7337221b3bc0103ecd4196bc4bcbcf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>597337221b3bc0103ecd4196bc4bcbcf</document_key>
+        <document_key>064760321bfbc0103ecd4196bc4bcbeb</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d17337221b3bc0103ecd4196bc4bcbd0</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0e4760321bfbc0103ecd4196bc4bcbeb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -801,6 +647,7 @@ gs.info(rest.statusCode + " ::: " + rest.response + " ::: " + rest.error);&#13;
 answer = ifScript();&#13;
 function ifScript() {&#13;
 	var statusCode = workflow.scratchpad.statusCodeValue;&#13;
+	gs.info("Printtttt: " + statusCode);&#13;
 	if (statusCode === 0) {&#13;
 		return 'yes';&#13;
 	} else {&#13;
@@ -813,43 +660,71 @@ function ifScript() {&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>597337221b3bc0103ecd4196bc4bcbcf</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d7337221b3bc0103ecd4196bc4bcbcf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>597337221b3bc0103ecd4196bc4bcbcf</document_key>
+        <document_key>064760321bfbc0103ecd4196bc4bcbeb</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>117337221b3bc0103ecd4196bc4bcbd0</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbeb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>1</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>597337221b3bc0103ecd4196bc4bcbcf</document_key>
+        <document_key>064760321bfbc0103ecd4196bc4bcbeb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>864760321bfbc0103ecd4196bc4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>064760321bfbc0103ecd4196bc4bcbeb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>864760321bfbc0103ecd4196bc4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>064760321bfbc0103ecd4196bc4bcbeb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>064760321bfbc0103ecd4196bc4bcbeb</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d17337221b3bc0103ecd4196bc4bcbd0</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0e4760321bfbc0103ecd4196bc4bcbeb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -857,6 +732,7 @@ function ifScript() {&#13;
 answer = ifScript();&#13;
 function ifScript() {&#13;
 	var statusCode = workflow.scratchpad.statusCodeValue;&#13;
+	gs.info("Printtttt: " + statusCode);&#13;
 	if (statusCode === 0) {&#13;
 		return 'yes';&#13;
 	} else {&#13;
@@ -868,7 +744,7 @@ function ifScript() {&#13;
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Status check from SNOW to VRO">597337221b3bc0103ecd4196bc4bcbcf</activity>
+        <activity display_value="Status check from SNOW to VRO">064760321bfbc0103ecd4196bc4bcbeb</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -882,14 +758,14 @@ function ifScript() {&#13;
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>597337221b3bc0103ecd4196bc4bcbd0</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>024760321bfbc0103ecd4196bc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Status check from SNOW to VRO">597337221b3bc0103ecd4196bc4bcbcf</activity>
+        <activity display_value="Status check from SNOW to VRO">064760321bfbc0103ecd4196bc4bcbeb</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -903,11 +779,11 @@ function ifScript() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d97337221b3bc0103ecd4196bc4bcbd0</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>824760321bfbc0103ecd4196bc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -923,32 +799,60 @@ function ifScript() {&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="status check from VRO to SNOW">d57337221b3bc0103ecd4196bc4bcbcb</stage>
+        <stage display_value="status check from VRO to SNOW">4a4760321bfbc0103ecd4196bc4bcbe7</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5573b7221b3bc0103ecd4196bc4bcb03</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ce47ec321bfbc0103ecd4196bc4bcbde</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>738</x>
         <y>285</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=5573b7221b3bc0103ecd4196bc4bcb03"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ce47ec321bfbc0103ecd4196bc4bcbde"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5573b7221b3bc0103ecd4196bc4bcb03</document_key>
+        <document_key>ce47ec321bfbc0103ecd4196bc4bcbde</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ce47ec321bfbc0103ecd4196bc4bcbde</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4247ec321bfbc0103ecd4196bc4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ce47ec321bfbc0103ecd4196bc4bcbde</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d73b7221b3bc0103ecd4196bc4bcb03</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c647ec321bfbc0103ecd4196bc4bcbdf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -969,71 +873,43 @@ function ifScript() {&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5573b7221b3bc0103ecd4196bc4bcb03</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9973b7221b3bc0103ecd4196bc4bcb03</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>1</value>
-        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>5573b7221b3bc0103ecd4196bc4bcb03</document_key>
+        <document_key>ce47ec321bfbc0103ecd4196bc4bcbde</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d573b7221b3bc0103ecd4196bc4bcb03</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4247ec321bfbc0103ecd4196bc4bcbdf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5573b7221b3bc0103ecd4196bc4bcb03</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d573b7221b3bc0103ecd4196bc4bcb03</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>5573b7221b3bc0103ecd4196bc4bcb03</document_key>
+        <document_key>ce47ec321bfbc0103ecd4196bc4bcbde</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9973b7221b3bc0103ecd4196bc4bcb03</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbdf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>1</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>5573b7221b3bc0103ecd4196bc4bcb03</document_key>
+        <document_key>ce47ec321bfbc0103ecd4196bc4bcbde</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d73b7221b3bc0103ecd4196bc4bcb03</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c647ec321bfbc0103ecd4196bc4bcbdf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -1053,7 +929,7 @@ function ifScript() {&#13;
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="status Check from VRO to SNOW">5573b7221b3bc0103ecd4196bc4bcb03</activity>
+        <activity display_value="status Check from VRO to SNOW">ce47ec321bfbc0103ecd4196bc4bcbde</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -1067,14 +943,14 @@ function ifScript() {&#13;
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d173b7221b3bc0103ecd4196bc4bcb04</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e47ec321bfbc0103ecd4196bc4bcbdf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="status Check from VRO to SNOW">5573b7221b3bc0103ecd4196bc4bcb03</activity>
+        <activity display_value="status Check from VRO to SNOW">ce47ec321bfbc0103ecd4196bc4bcbde</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -1088,11 +964,11 @@ function ifScript() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5173b7221b3bc0103ecd4196bc4bcb04</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca47ec321bfbc0103ecd4196bc4bcbdf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -1110,30 +986,30 @@ function ifScript() {&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>917337221b3bc0103ecd4196bc4bcbd1</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbe4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>39</x>
         <y>118</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=917337221b3bc0103ecd4196bc4bcbd1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0647ec321bfbc0103ecd4196bc4bcbe4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>917337221b3bc0103ecd4196bc4bcbd1</document_key>
+        <document_key>0647ec321bfbc0103ecd4196bc4bcbe4</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>157337221b3bc0103ecd4196bc4bcbd1</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8647ec321bfbc0103ecd4196bc4bcbe4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
         <value>activity.result = run();&#13;
 &#13;
 function run() {&#13;
@@ -1148,15 +1024,15 @@ function run() {&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>917337221b3bc0103ecd4196bc4bcbd1</document_key>
+        <document_key>0647ec321bfbc0103ecd4196bc4bcbe4</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>157337221b3bc0103ecd4196bc4bcbd1</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8647ec321bfbc0103ecd4196bc4bcbe4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
         <value>activity.result = run();&#13;
 &#13;
 function run() {&#13;
@@ -1170,7 +1046,7 @@ function run() {&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Validate the Inputs">917337221b3bc0103ecd4196bc4bcbd1</activity>
+        <activity display_value="Validate the Inputs">0647ec321bfbc0103ecd4196bc4bcbe4</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1184,11 +1060,11 @@ function run() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>197337221b3bc0103ecd4196bc4bcbd1</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8a47ec321bfbc0103ecd4196bc4bcbe4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -1204,33 +1080,35 @@ function run() {&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="CallBack from VRO to SNOW">557337221b3bc0103ecd4196bc4bcbca</stage>
+        <stage display_value="CallBack from VRO to SNOW">ca4760321bfbc0103ecd4196bc4bcbe8</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d57337221b3bc0103ecd4196bc4bcbd3</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8e47ec321bfbc0103ecd4196bc4bcbe5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>673</x>
         <y>18</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=d57337221b3bc0103ecd4196bc4bcbd3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8e47ec321bfbc0103ecd4196bc4bcbe5"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d57337221b3bc0103ecd4196bc4bcbd3</document_key>
+        <document_key>8e47ec321bfbc0103ecd4196bc4bcbe5</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>517377221b3bc0103ecd4196bc4bcbfe</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0247ec321bfbc0103ecd4196bc4bcbe6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>function run() {&#13;
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
 gs.info("WF: Running Add LUN to existing host workflow - callback to vro");&#13;
 var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
 var util = VPLEX_VMAX_Abstract_RestApi.get(id);&#13;
@@ -1256,16 +1134,18 @@ workflow.scratchpad.error = errorValue;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>d57337221b3bc0103ecd4196bc4bcbd3</document_key>
+        <document_key>8e47ec321bfbc0103ecd4196bc4bcbe5</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>517377221b3bc0103ecd4196bc4bcbfe</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0247ec321bfbc0103ecd4196bc4bcbe6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>function run() {&#13;
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <value>activity.result = run();&#13;
+&#13;
+function run() {&#13;
 gs.info("WF: Running Add LUN to existing host workflow - callback to vro");&#13;
 var id = "dc4895ea1be300103ecd4196bc4bcb1c";&#13;
 var util = VPLEX_VMAX_Abstract_RestApi.get(id);&#13;
@@ -1290,7 +1170,7 @@ workflow.scratchpad.error = errorValue;&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="VRO to SNOW callBack Execution">d57337221b3bc0103ecd4196bc4bcbd3</activity>
+        <activity display_value="VRO to SNOW callBack Execution">8e47ec321bfbc0103ecd4196bc4bcbe5</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1304,11 +1184,11 @@ workflow.scratchpad.error = errorValue;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>557377221b3bc0103ecd4196bc4bcbfe</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbe6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
@@ -1326,170 +1206,212 @@ workflow.scratchpad.error = errorValue;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>997377221b3bc0103ecd4196bc4bcbff</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e47ec321bfbc0103ecd4196bc4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:47</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
         <x>545</x>
         <y>179</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=997377221b3bc0103ecd4196bc4bcbff"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4e47ec321bfbc0103ecd4196bc4bcbe0"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0247ec321bfbc0103ecd4196bc4bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1173b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0a47ec321bfbc0103ecd4196bc4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4247ec321bfbc0103ecd4196bc4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
         <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1573b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4647ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1973b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a47ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1d73b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e47ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5173b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8247ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5573b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8647ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>script</value>
         <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5973b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8a47ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d73b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8e47ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9173b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c247ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9573b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c647ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9973b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca47ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 var respVal = workflow.scratchpad.responseValue.toString();&#13;
 var errorVal = workflow.scratchpad.errorVal;&#13;
@@ -1498,272 +1420,230 @@ gs.info("printttt " + locValue);&#13;
 workflow.scratchpad.resValue = respVal;&#13;
 workflow.scratchpad.error = errorVal;&#13;
 workflow.scratchpad.locationVal = locValue;&#13;
-answer = 7;</value>
+answer = 60;</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9d7377221b3bc0103ecd4196bc4bcbff</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ce47ec321bfbc0103ecd4196bc4bcbe0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d173b7221b3bc0103ecd4196bc4bcb01</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d573b7221b3bc0103ecd4196bc4bcb00</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd73b7221b3bc0103ecd4196bc4bcb01</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5573b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8647ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>script</value>
         <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9d7377221b3bc0103ecd4196bc4bcbff</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ce47ec321bfbc0103ecd4196bc4bcbe0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d573b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0a47ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5173b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8247ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1173b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8e47ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d173b7221b3bc0103ecd4196bc4bcb01</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d73b7221b3bc0103ecd4196bc4bcb00</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1320</order>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1d73b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4247ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd73b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>0247ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1350</order>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1973b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e47ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
-        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1573b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4647ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
-        <order>1360</order>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5973b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a47ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
-        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9173b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c247ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9573b7221b3bc0103ecd4196bc4bcb01</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>c647ec321bfbc0103ecd4196bc4bcbe2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value/>
         <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>997377221b3bc0103ecd4196bc4bcbff</document_key>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>8a47ec321bfbc0103ecd4196bc4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4e47ec321bfbc0103ecd4196bc4bcbe0</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9973b7221b3bc0103ecd4196bc4bcb00</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>ca47ec321bfbc0103ecd4196bc4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 var respVal = workflow.scratchpad.responseValue.toString();&#13;
 var errorVal = workflow.scratchpad.errorVal;&#13;
@@ -1772,11 +1652,11 @@ gs.info("printttt " + locValue);&#13;
 workflow.scratchpad.resValue = respVal;&#13;
 workflow.scratchpad.error = errorVal;&#13;
 workflow.scratchpad.locationVal = locValue;&#13;
-answer = 7;</value>
+answer = 60;</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="waiting time for backend to refresh">997377221b3bc0103ecd4196bc4bcbff</activity>
+        <activity display_value="waiting time for backend to refresh">4e47ec321bfbc0103ecd4196bc4bcbe0</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1790,135 +1670,146 @@ answer = 7;</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9d73b7221b3bc0103ecd4196bc4bcb02</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4e47ec321bfbc0103ecd4196bc4bcbe3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">557377221b3bc0103ecd4196bc4bcbfe</condition>
-        <from display_value="VRO to SNOW callBack Execution">d57337221b3bc0103ecd4196bc4bcbd3</from>
+        <condition display_value="Always">8e4760321bfbc0103ecd4196bc4bcbe9</condition>
+        <from display_value="Set the request to closed complete">864760321bfbc0103ecd4196bc4bcbe9</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1173b7221b3bc0103ecd4196bc4bcb07</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0647ec321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="status Check from VRO to SNOW">5573b7221b3bc0103ecd4196bc4bcb03</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="End">8a47ec321bfbc0103ecd4196bc4bcbe6</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">597337221b3bc0103ecd4196bc4bcbd0</condition>
-        <from display_value="Status check from SNOW to VRO">597337221b3bc0103ecd4196bc4bcbcf</from>
+        <condition display_value="Always">4e47ec321bfbc0103ecd4196bc4bcbe3</condition>
+        <from display_value="waiting time for backend to refresh">4e47ec321bfbc0103ecd4196bc4bcbe0</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>1973b7221b3bc0103ecd4196bc4bcb06</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0e47ec321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="Request Failed">dd7337221b3bc0103ecd4196bc4bcbd1</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="VRO to SNOW callBack Execution">8e47ec321bfbc0103ecd4196bc4bcbe5</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">d17377221b3bc0103ecd4196bc4bcbff</condition>
-        <from display_value="Begin">1d7377221b3bc0103ecd4196bc4bcbfe</from>
+        <condition display_value="Yes">ca47ec321bfbc0103ecd4196bc4bcbdf</condition>
+        <from display_value="status Check from VRO to SNOW">ce47ec321bfbc0103ecd4196bc4bcbde</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5573b7221b3bc0103ecd4196bc4bcb06</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>0e47ec321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="Validate the Inputs">917337221b3bc0103ecd4196bc4bcbd1</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="Set the request to closed complete">864760321bfbc0103ecd4196bc4bcbe9</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">d173b7221b3bc0103ecd4196bc4bcb04</condition>
-        <from display_value="status Check from VRO to SNOW">5573b7221b3bc0103ecd4196bc4bcb03</from>
+        <condition display_value="No">024760321bfbc0103ecd4196bc4bcbec</condition>
+        <from display_value="Status check from SNOW to VRO">064760321bfbc0103ecd4196bc4bcbeb</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5573b7221b3bc0103ecd4196bc4bcb07</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>4247ec321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="Request Failed">dd7337221b3bc0103ecd4196bc4bcbd1</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="Request Failed">c64760321bfbc0103ecd4196bc4bcbea</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">557337221b3bc0103ecd4196bc4bcbd2</condition>
-        <from display_value="Request Failed">dd7337221b3bc0103ecd4196bc4bcbd1</from>
+        <condition display_value="Always">8a47ec321bfbc0103ecd4196bc4bcbe4</condition>
+        <from display_value="Validate the Inputs">0647ec321bfbc0103ecd4196bc4bcbe4</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>5d73b7221b3bc0103ecd4196bc4bcb06</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>4a47ec321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="End">d97337221b3bc0103ecd4196bc4bcbd2</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="Initiate the REST call to VRO">4a4760321bfbc0103ecd4196bc4bcbec</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">197337221b3bc0103ecd4196bc4bcbd1</condition>
-        <from display_value="Validate the Inputs">917337221b3bc0103ecd4196bc4bcbd1</from>
+        <condition display_value="Always">0647ec321bfbc0103ecd4196bc4bcbe6</condition>
+        <from display_value="VRO to SNOW callBack Execution">8e47ec321bfbc0103ecd4196bc4bcbe5</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>9173b7221b3bc0103ecd4196bc4bcb06</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8247ec321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="Initiate the REST call to VRO">1d7337221b3bc0103ecd4196bc4bcbce</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="status Check from VRO to SNOW">ce47ec321bfbc0103ecd4196bc4bcbde</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">d97337221b3bc0103ecd4196bc4bcbd0</condition>
-        <from display_value="Status check from SNOW to VRO">597337221b3bc0103ecd4196bc4bcbcf</from>
+        <condition display_value="Always">4e4760321bfbc0103ecd4196bc4bcbea</condition>
+        <from display_value="Request Failed">c64760321bfbc0103ecd4196bc4bcbea</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:44</sys_created_on>
-        <sys_id>b5837bee1bf7c0103ecd4196bc4bcb1f</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8647ec321bfbc0103ecd4196bc4bcbe8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:44</sys_updated_on>
-        <to display_value="VRO to SNOW callBack Execution">d57337221b3bc0103ecd4196bc4bcbd3</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="End">8a47ec321bfbc0103ecd4196bc4bcbe6</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">5173b7221b3bc0103ecd4196bc4bcb04</condition>
-        <from display_value="status Check from VRO to SNOW">5573b7221b3bc0103ecd4196bc4bcb03</from>
+        <condition display_value="No">4e47ec321bfbc0103ecd4196bc4bcbdf</condition>
+        <from display_value="status Check from VRO to SNOW">ce47ec321bfbc0103ecd4196bc4bcbde</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d173b7221b3bc0103ecd4196bc4bcb07</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8a47ec321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="Set the request to closed complete">917337221b3bc0103ecd4196bc4bcbcc</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="Request Failed">c64760321bfbc0103ecd4196bc4bcbea</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">917337221b3bc0103ecd4196bc4bcbcf</condition>
-        <from display_value="Initiate the REST call to VRO">1d7337221b3bc0103ecd4196bc4bcbce</from>
+        <condition display_value="Always">ce4760321bfbc0103ecd4196bc4bcbec</condition>
+        <from display_value="Initiate the REST call to VRO">4a4760321bfbc0103ecd4196bc4bcbec</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>d973b7221b3bc0103ecd4196bc4bcb05</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>8e47ec321bfbc0103ecd4196bc4bcbe7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="Status check from SNOW to VRO">597337221b3bc0103ecd4196bc4bcbcf</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="Status check from SNOW to VRO">064760321bfbc0103ecd4196bc4bcbeb</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">917337221b3bc0103ecd4196bc4bcbcd</condition>
-        <from display_value="Set the request to closed complete">917337221b3bc0103ecd4196bc4bcbcc</from>
+        <condition display_value="Always">8647ec321bfbc0103ecd4196bc4bcbe0</condition>
+        <from display_value="Begin">c247ec321bfbc0103ecd4196bc4bcbe0</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>dd73b7221b3bc0103ecd4196bc4bcb05</sys_id>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>c647ec321bfbc0103ecd4196bc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <to display_value="End">d97337221b3bc0103ecd4196bc4bcbd2</to>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="Validate the Inputs">0647ec321bfbc0103ecd4196bc4bcbe4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">824760321bfbc0103ecd4196bc4bcbec</condition>
+        <from display_value="Status check from SNOW to VRO">064760321bfbc0103ecd4196bc4bcbeb</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-30 12:48:51</sys_created_on>
+        <sys_id>ce47ec321bfbc0103ecd4196bc4bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-30 12:48:51</sys_updated_on>
+        <to display_value="waiting time for backend to refresh">4e47ec321bfbc0103ecd4196bc4bcbe0</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-03-30 09:02:24</sys_created_on>
-        <sys_id>8d7337221b3bc0103ecd4196bc4bcbc8</sys_id>
+        <sys_created_on>2020-03-30 12:48:50</sys_created_on>
+        <sys_id>4a4760321bfbc0103ecd4196bc4bcbe6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:02:24</sys_updated_on>
-        <workflow_version display_value="UseCase1: Add LUN to existing host">c97337221b3bc0103ecd4196bc4bcbc8</workflow_version>
+        <sys_updated_on>2020-03-30 12:48:50</sys_updated_on>
+        <workflow_version display_value="UseCase1: Add LUN to existing host">c64760321bfbc0103ecd4196bc4bcbe6</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=6fd548f51b3300103ecd4196bc4bcb7d^sys_id!=c97337221b3bc0103ecd4196bc4bcbc8">
+    <wf_workflow_version action="update_multiple" query="workflow=6fd548f51b3300103ecd4196bc4bcb7d^sys_id!=c64760321bfbc0103ecd4196bc4bcbe6">
         <published>false</published>
     </wf_workflow_version>
 </record_update>
