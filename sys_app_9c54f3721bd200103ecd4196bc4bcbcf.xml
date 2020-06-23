@@ -10,14 +10,14 @@
         <license_model>none</license_model>
         <logo>ab3bca741b6200103ecd4196bc4bcb91</logo>
         <menu/>
-        <name>VPLEX_VMAX_CATALOG</name>
+        <name>AWX_SNOW_Integration</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
-        <scope>x_440435_vplex_vma</scope>
+        <scope>x_440435_awx_snow</scope>
         <scoped_administration>false</scoped_administration>
-        <short_description>VMAX VPLEX Plugin use cases</short_description>
-        <source>x_440435_vplex_vma</source>
+        <short_description>end to end automation</short_description>
+        <source>x_440435_awx_snow</source>
         <store_correlation_id/>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
